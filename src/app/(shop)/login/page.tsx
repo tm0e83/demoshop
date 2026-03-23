@@ -72,7 +72,7 @@ export default function Login() {
         </Card>
 
         <Card>
-          <Title level={2}>Don't have an account?</Title>
+          <Title level={2}>Don&apos;t have an account?</Title>
           <Link href="/signup">
             <Button>Sign Up</Button>
           </Link>

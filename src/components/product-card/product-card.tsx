@@ -10,6 +10,7 @@ export default function ProductCard({ product }: { product: ProductType }) {
         {product.title}
       </div>
       <div className={styles.productImage}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={product.image || 'https://placehold.co/300x225?text=No+Image'}
           alt={product.title}

@@ -28,6 +28,7 @@ export default function ProductDetailPage() {
   return (
     <div className={styles.productDetailPage}>
       <div className="product-image-column">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={product.image || 'https://placehold.co/600x450?text=No+Image'}
           alt={product.title}

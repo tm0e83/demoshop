@@ -1,3 +1,5 @@
+'use client';
+
 import styles from './category.module.css';
 
 import type { CategoryType } from '@/typings';

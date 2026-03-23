@@ -1,7 +1,5 @@
 'use client';
 
-import styles from './page.module.css';
-
 import type { CategoryType } from '@/typings';
 import Link from 'next/link';
 import { Plus } from 'lucide-react';

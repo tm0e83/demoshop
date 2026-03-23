@@ -1,3 +1,5 @@
+'use client';
+
 import styles from './cart-item.module.css';
 import type { CartItemType } from '@/typings';
 import Link from 'next/link';
@@ -29,6 +31,7 @@ export default function CartItem({ cartItem, quantityChangeable = false, removab
     <div className={styles.cartItem}>
       <div className={styles.cartItemImage}>
         <Link href={`/product/${cartItem.id}`}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={cartItem.image || 'https://placehold.co/300x225?text=No+Image'}
             alt={cartItem.title}

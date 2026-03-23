@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import type { CategoryType } from '@typings';
+import type { CategoryType } from '@/typings';
 
 type CategoryTypeState = {
   items: CategoryType[];

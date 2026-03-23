@@ -1,3 +1,5 @@
+'use client';
+
 import styles from './range-slider.module.css';
 import { useState } from 'react';
 

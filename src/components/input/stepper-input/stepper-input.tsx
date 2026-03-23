@@ -1,3 +1,5 @@
+'use client';
+
 import styles from './stepper-input.module.css';
 import { Minus, Plus } from 'lucide-react';
 import BaseInput from '../base-input';

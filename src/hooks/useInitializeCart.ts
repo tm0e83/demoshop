@@ -75,6 +75,7 @@ const useInitializeCart = () => {
   }, [
     billingAddress,
     items,
+    orderPlaced,
     paymentMethodId,
     shippingAddress,
     shippingMethodId,

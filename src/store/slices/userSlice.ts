@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import type { UserType } from '@typings';
+import type { UserType } from '@/typings';
 
 type UserState = {
   user: UserType | null;

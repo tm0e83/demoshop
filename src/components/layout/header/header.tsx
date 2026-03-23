@@ -4,18 +4,14 @@ import type { CartItemType } from '@/typings';
 import { LogIn, Settings, ShoppingBasket, User } from 'lucide-react';
 import Link from 'next/link';
 import Logo from '@/components/logo';
-import { useEffect, useState } from 'react';
+import { useSyncExternalStore } from 'react';
 import { useCart, useCategories, useUser } from '@/hooks';
 
 export default function Header() {
   const { user } = useUser();
   const { categories } = useCategories();
   const cart = useCart();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  const mounted = useSyncExternalStore(() => () => {}, () => true, () => false);
 
   return (
     <header className={styles.header}>

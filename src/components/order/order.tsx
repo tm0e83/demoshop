@@ -1,3 +1,5 @@
+'use client';
+
 import styles from './order.module.css';
 import type { OrderType, UserType } from '@/typings';
 import { useState, useEffect } from 'react';

@@ -1,3 +1,5 @@
+'use client';
+
 import type { CategoryType } from '@/typings';
 import { useDispatch } from 'react-redux';
 import { toast } from 'react-toastify';

@@ -6,7 +6,7 @@ import type {
   PaymentMethodType, 
   ShippingMethodType, 
   UserType
-} from '@typings';
+} from '@/typings';
 
 export type OrderType = {
   billingAddress: AddressType;

@@ -1,3 +1,5 @@
+'use client';
+
 import styles from './multi-select.module.css';
 
 import { useId } from 'react';
