@@ -24,7 +24,7 @@ import {setGlobalOptions} from "firebase-functions";
 // functions should each use functions.runWith({ maxInstances: 10 }) instead.
 // In the v1 API, each function can only serve one request per container, so
 // this will be the maximum concurrent request count.
-setGlobalOptions({ maxInstances: 10 });
+setGlobalOptions({maxInstances: 10});
 
 // export const helloWorld = onRequest((request, response) => {
 //   logger.info("Hello logs!", {structuredData: true});
@@ -32,17 +32,18 @@ setGlobalOptions({ maxInstances: 10 });
 // });
 
 
-const { onSchedule } = require("firebase-functions/v2/scheduler");
-const admin = require("firebase-admin");
+import {onSchedule} from "firebase-functions/v2/scheduler";
+import * as admin from "firebase-admin";
 
 admin.initializeApp();
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const initialData = require("./data.json");
 
 // Diese Funktion läuft täglich um 03:00 Uhr morgens
 exports.resetDatabase = onSchedule("30 14 * * *", async () => {
   const db = admin.database();
-  
+
   try {
     // .set() überschreibt den gesamten Root-Knoten (/)
     await db.ref("/").set(initialData);

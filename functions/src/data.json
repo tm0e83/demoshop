@@ -1,0 +1,289 @@
+{
+  "categories": {
+    "-OnRc1JUABtKFq9UXGOA": {
+      "active": true,
+      "description": "Outerwear designed for different seasons, including lightweight jackets, winter coats, and functional outdoor jackets.",
+      "id": "-OnRc1JUABtKFq9UXGOA",
+      "image": "",
+      "title": "Jackets"
+    },
+    "-OnRc70Qg9qNnJpqJSon": {
+      "active": true,
+      "createdAt": 1773228032120,
+      "description": "Stylish dresses for various occasions, ranging from casual summer dresses to elegant evening wear.",
+      "id": "-OnRc70Qg9qNnJpqJSon",
+      "image": "",
+      "title": "Dresses"
+    },
+    "-OnRc9noTqIP3sD-jVEL": {
+      "active": true,
+      "createdAt": 1773228043538,
+      "description": "Different skirt styles including mini, midi, and maxi skirts suitable for casual, business, or formal outfits.",
+      "id": "-OnRc9noTqIP3sD-jVEL",
+      "image": "",
+      "title": "Skirts"
+    },
+    "-OnRcC7U2nrGqKlcE6Tt": {
+      "active": true,
+      "createdAt": 1773228053055,
+      "description": "Functional clothing designed for workouts and athletic activities, featuring breathable and flexible materials.",
+      "id": "-OnRcC7U2nrGqKlcE6Tt",
+      "image": "",
+      "title": "Sportswear"
+    },
+    "-OnRcEiRe0WVNdKuR_DX": {
+      "active": true,
+      "createdAt": 1773228063677,
+      "description": "Fashion add-ons such as belts, scarves, hats, and gloves that complement and complete an outfit.",
+      "id": "-OnRcEiRe0WVNdKuR_DX",
+      "image": "",
+      "title": "Accessories"
+    },
+    "-OnRu61BH_0uE58uSU7l": {
+      "active": true,
+      "createdAt": 1773232746668,
+      "description": "Comfortable and versatile tops for everyday wear, available in a wide range of styles, colors, and materials.",
+      "id": "-OnRu61BH_0uE58uSU7l",
+      "image": "",
+      "title": "T-Shirts"
+    }
+  },
+  "discounts": {
+    "-YyYAoOM1slMEFMSaUDo": {
+      "code": "timo",
+      "discountType": "fixed",
+      "id": "-YyYAoOM1slMEFMSaUDo",
+      "type": "coupon",
+      "validFrom": 1773153502840,
+      "validUntil": 1793153502840,
+      "value": 15
+    },
+    "-xXxAoOM1slMEFMSaUDo": {
+      "code": "promo2026",
+      "discountType": "fixed",
+      "id": "-xXxAoOM1slMEFMSaUDo",
+      "type": "coupon",
+      "validFrom": 1773153502840,
+      "validUntil": 1793153502840,
+      "value": 10
+    }
+  },
+  "orders": {
+    "-Oo9ZrLWUjTuSQwyv2se": {
+      "billingAddress": {
+        "city": "Groß-Rohrheim",
+        "country": "Germany",
+        "firstname": "Timo",
+        "id": "-Oo-PKULihXFvl4fkYSE",
+        "lastname": "Ribeiro Szyszka",
+        "street": "Neugasse 21",
+        "zipcode": "68649"
+      },
+      "createdAt": 1773998929476,
+      "id": "-Oo9ZrLWUjTuSQwyv2se",
+      "items": [
+        {
+          "active": true,
+          "categoryIds": {
+            "-OnRu61BH_0uE58uSU7l": true,
+            "cat1": true
+          },
+          "createdAt": 1773232582845,
+          "description": "Trendy oversized t-shirt designed for a relaxed streetwear style. Made with durable cotton for all-day comfort.",
+          "id": "-OnRtU1TEREdZMt_YkrU",
+          "image": "",
+          "price": 29.99,
+          "quantity": 1,
+          "title": "Oversized Streetwear T-Shirt"
+        },
+        {
+          "active": true,
+          "categoryIds": {
+            "-OnRc1JUABtKFq9UXGOA": true
+          },
+          "createdAt": 1773237440875,
+          "description": "A lightweight windbreaker designed for mild weather and outdoor activities. Features a breathable fabric, zip closure, and adjustable hood for protection against wind and light rain.",
+          "id": "-OnSB043fNXXaCo-rWtw",
+          "image": "",
+          "price": 49.99,
+          "quantity": 2,
+          "title": "Lightweight Windbreaker Jacket"
+        }
+      ],
+      "orderPlaced": true,
+      "paymentMethodId": "paypal",
+      "shippingAddress": {
+        "city": "Groß-Rohrheim",
+        "country": "Germany",
+        "firstname": "Timo",
+        "id": "-Oo-PKULihXFvl4fkYSE",
+        "lastname": "Ribeiro Szyszka",
+        "street": "Neugasse 21",
+        "zipcode": "68649"
+      },
+      "shippingMethodId": "express",
+      "status": "paid",
+      "uid": "yDoOOSVHzxXk8tnvWFeY2jtvlGh2"
+    }
+  },
+  "products": {
+    "-OnRYNSEO4gJgV6QcaQJ": {
+      "active": true,
+      "categoryIds": {
+        "-OnRu61BH_0uE58uSU7l": true,
+        "cat1": true
+      },
+      "description": "Stylish vintage-inspired t-shirt with a washed finish for a worn-in look. Comfortable and effortlessly cool.",
+      "id": "-OnRYNSEO4gJgV6QcaQJ",
+      "image": "",
+      "price": 50.59,
+      "title": "Vintage Washed T-Shirt"
+    },
+    "-OnRtU1TEREdZMt_YkrU": {
+      "active": true,
+      "categoryIds": {
+        "-OnRu61BH_0uE58uSU7l": true,
+        "cat1": true
+      },
+      "createdAt": 1773232582845,
+      "description": "Trendy oversized t-shirt designed for a relaxed streetwear style. Made with durable cotton for all-day comfort.",
+      "id": "-OnRtU1TEREdZMt_YkrU",
+      "image": "",
+      "price": 29.99,
+      "title": "Oversized Streetwear T-Shirt"
+    },
+    "-OnRw42QOY07vM931WLN": {
+      "active": true,
+      "categoryIds": {
+        "-OnRu61BH_0uE58uSU7l": true
+      },
+      "createdAt": 1773233262839,
+      "description": "Casual t-shirt featuring a bold graphic print. A great statement piece for modern casual outfits.",
+      "id": "-OnRw42QOY07vM931WLN",
+      "image": "",
+      "price": 23.99,
+      "title": "Graphic Print T-Shirt"
+    },
+    "-OnSB043fNXXaCo-rWtw": {
+      "active": true,
+      "categoryIds": {
+        "-OnRc1JUABtKFq9UXGOA": true
+      },
+      "createdAt": 1773237440875,
+      "description": "A lightweight windbreaker designed for mild weather and outdoor activities. Features a breathable fabric, zip closure, and adjustable hood for protection against wind and light rain.",
+      "id": "-OnSB043fNXXaCo-rWtw",
+      "image": "",
+      "price": 49.99,
+      "title": "Lightweight Windbreaker Jacket"
+    },
+    "-OnSB5IG4VD5poyUTFb4": {
+      "active": true,
+      "categoryIds": {
+        "-OnRc1JUABtKFq9UXGOA": true
+      },
+      "createdAt": 1773237462261,
+      "description": "Warm and durable winter parka with insulated lining for cold temperatures. Includes a padded hood, multiple pockets, and water-resistant outer material for reliable winter protection.",
+      "id": "-OnSB5IG4VD5poyUTFb4",
+      "image": "",
+      "price": 119.99,
+      "title": "Insulated Winter Parka"
+    },
+    "-OnSBT0fC6yVVSJ_-0ws": {
+      "active": true,
+      "categoryIds": {
+        "-OnRc1JUABtKFq9UXGOA": true,
+        "-OnRcC7U2nrGqKlcE6Tt": true
+      },
+      "createdAt": 1773237559439,
+      "description": "A lightweight and breathable running jacket designed for athletic activities and outdoor training. Made with flexible, moisture-wicking fabric and a wind-resistant outer layer, it provides comfort, mobility, and protection during workouts in changing weather conditions.",
+      "id": "-OnSBT0fC6yVVSJ_-0ws",
+      "image": "",
+      "price": 79.99,
+      "title": "Performance Running Jacket"
+    },
+    "-OnWMQuKUFPnVDPd2MfI": {
+      "active": true,
+      "categoryIds": {
+        "-OnRu61BH_0uE58uSU7l": true
+      },
+      "createdAt": 1773307543221,
+      "description": "Sustainably produced t-shirt made from 100% organic cotton. Soft, eco-friendly, and perfect for conscious shoppers.",
+      "id": "-OnWMQuKUFPnVDPd2MfI",
+      "image": "",
+      "price": 27.99,
+      "title": "Organic Cotton Eco T-Shirt"
+    },
+    "-OnWMwzX_AqF__GdpC8-": {
+      "active": true,
+      "categoryIds": {
+        "-OnRcC7U2nrGqKlcE6Tt": true
+      },
+      "createdAt": 1773307678723,
+      "description": "Lightweight sports shorts designed for workouts, running, and gym sessions. Made from breathable, quick-drying fabric with an elastic waistband to ensure maximum comfort and freedom of movement during athletic activities.",
+      "id": "-OnWMwzX_AqF__GdpC8-",
+      "image": "",
+      "price": 29.99,
+      "title": "Breathable Training Shorts"
+    },
+    "-OnaZbM-QR3HnolLIf3-": {
+      "active": true,
+      "categoryIds": {
+        "-OnaZ6IBm7LObqRiTbtF": true
+      },
+      "createdAt": 1773394884062,
+      "description": "Eine schöne Wurst",
+      "id": "-OnaZbM-QR3HnolLIf3-",
+      "image": "",
+      "price": 99.95,
+      "title": "Blue Jeans"
+    }
+  },
+  "productsByCategory": {
+    "-OnRc1JUABtKFq9UXGOA": {
+      "-OnSB043fNXXaCo-rWtw": true,
+      "-OnSB5IG4VD5poyUTFb4": true,
+      "-OnSBT0fC6yVVSJ_-0ws": true
+    },
+    "-OnRcC7U2nrGqKlcE6Tt": {
+      "-OnSBT0fC6yVVSJ_-0ws": true,
+      "-OnWMwzX_AqF__GdpC8-": true
+    },
+    "-OnRu61BH_0uE58uSU7l": {
+      "-OnRYNSEO4gJgV6QcaQJ": true,
+      "-OnRtU1TEREdZMt_YkrU": true,
+      "-OnRw42QOY07vM931WLN": true,
+      "-OnWMQuKUFPnVDPd2MfI": true
+    }
+  },
+  "userOrders": {
+    "yDoOOSVHzxXk8tnvWFeY2jtvlGh2": {
+      "-Oo9ZrLWUjTuSQwyv2se": {
+        "-Oo9ZrLWUjTuSQwyv2se": true
+      }
+    }
+  },
+  "users": {
+    "yDoOOSVHzxXk8tnvWFeY2jtvlGh2": {
+      "addresses": {
+        "-Oo-PKULihXFvl4fkYSE": {
+          "city": "Groß-Rohrheim",
+          "country": "Germany",
+          "firstname": "Timo",
+          "id": "-Oo-PKULihXFvl4fkYSE",
+          "lastname": "Ribeiro Szyszka",
+          "street": "Neugasse 21",
+          "zipcode": "68649"
+        }
+      },
+      "birthdate": "1983-12-15",
+      "createdAt": 1773828398194,
+      "defaultBillingAddress": "-Oo-PKULihXFvl4fkYSE",
+      "defaultShippingAddress": "-Oo-PKULihXFvl4fkYSE",
+      "email": "tm0e83@gmail.com",
+      "firstname": "Timo",
+      "lastname": "Ribeiro Szyszka",
+      "role": "admin",
+      "uid": "yDoOOSVHzxXk8tnvWFeY2jtvlGh2"
+    }
+  }
+}
