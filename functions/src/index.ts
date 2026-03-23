@@ -37,11 +37,10 @@ import * as admin from "firebase-admin";
 
 admin.initializeApp();
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const initialData = require("./data.json");
+import initialData from "./data.json";
 
 // Diese Funktion läuft täglich um 03:00 Uhr morgens
-exports.resetDatabase = onSchedule("30 14 * * *", async () => {
+exports.resetDatabase = onSchedule("0 2 * * *", async () => {
   const db = admin.database();
 
   try {
