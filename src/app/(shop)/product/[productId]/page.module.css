@@ -1,0 +1,14 @@
+.productDetailPage {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+
+  .productPrice {
+    font-size: 1.25rem;
+    color: var(--color-danger);
+  }  
+  
+  @media (min-width: 600px) {
+    flex-wrap: nowrap;
+  }
+}

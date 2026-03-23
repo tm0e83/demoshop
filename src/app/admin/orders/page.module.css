@@ -1,0 +1,10 @@
+.orderPverviewPage {
+  .actions {
+    margin-bottom: 2rem;
+  }
+
+  .status,
+  .actions {
+    max-width: 100px;
+  }  
+}

@@ -1,0 +1,19 @@
+.stepperInput {
+  display: flex;
+  align-items: center;
+
+  input {
+    margin-bottom: 0;
+    text-align: center;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+}
+
+.stepperInputField {
+  width: 75px;
+}

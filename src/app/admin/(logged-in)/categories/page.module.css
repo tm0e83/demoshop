@@ -1,0 +1,14 @@
+.category-overview-page {
+  .actions {
+    margin-bottom: 2rem;
+  }
+
+  .column-status {
+    max-width: 100px;
+  }
+
+  .column-actions {
+    gap: 0.5rem;
+    max-width: 150px;
+  }
+}

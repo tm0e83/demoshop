@@ -1,0 +1,18 @@
+.address {
+  .addresses {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .shippingAddresses,
+  .billingAddresses {
+    flex: 1;
+    gap: 1rem;
+  }
+
+  .addressContainer {
+    display: flex;
+    gap: 0.5rem;
+  }
+}

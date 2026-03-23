@@ -1,0 +1,322 @@
+/* @import "tailwindcss"; */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  --color-gray-50: rgb(248, 250, 252);
+  --color-gray-100: rgb(241, 245, 249);
+  --color-gray-200: rgb(226, 232, 240);
+  --color-gray-300: rgb(203, 213, 225);
+  --color-gray-400: rgb(148, 163, 184);
+  --color-gray-500: rgb(100, 116, 139);
+  --color-gray-600: rgb(71, 85, 105);
+  --color-gray-700: rgb(51, 65, 85);
+  --color-gray-800: rgb(30, 41, 59);
+  --color-gray-900: rgb(15, 23, 42);
+  --color-gray-950: rgb(2, 6, 23);
+  --color-primary: #007bff;
+  --color-secondary: var(--color-primary);
+  --color-info: #0c5460;
+  --color-danger: #dc3545;
+  --color-success: #28a745;
+  --color-warning: #d2a205;
+  --color-disabled: var(--color-gray-400);
+  --body-font-color: var(--color-gray-800);
+
+  font-size: 16px;
+  color: var(--body-font-color);
+  font-family: 'Work Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-inline-flex {
+  display: inline-flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-small {
+  font-size: 0.75rem;
+}
+
+.text-muted {
+  color: var(--color-gray-500);
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+  
+  &.active {
+    font-weight: bold;
+  }
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mt-1 {
+  margin-top: 0.25rem !important;
+}
+
+.mt-2 {
+  margin-top: 0.5rem !important;
+}
+
+.mt-4 {
+  margin-top: 1rem !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem !important;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 1rem !important;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.text-danger {
+  color: var(--color-danger);
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  &.shrink {
+    width: auto;
+  }
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.2em 0.4em;
+  font-size: 65%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  background-color: var(--color-danger);
+  color: #fff;
+}
+
+.input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &>div {
+    margin: 0;
+  }
+
+  .input {
+    flex: 1;
+    margin: 0;
+    
+    input {
+      padding-right: 2.5rem;
+      margin: 0;
+    }
+  }
+
+  svg {
+    position: absolute;
+    right: 0.5rem;
+    color: #aaa;
+    pointer-events: none;
+  }
+}
+
+.item-grid {
+  container-type: inline-size;
+  container-name: itemGrid;
+
+  .item-grid-head {
+    display: none;
+    font-weight: bold;
+    gap: 1rem; 
+  }
+
+  .item-grid-body {
+    display: flex;
+    flex-direction: column;
+
+    .item {
+      &:nth-child(odd) {
+       background-color: var(--color-gray-100);
+      }
+    }
+  }
+  
+  .item {
+    display: flex;  
+    flex-direction: column;
+    gap: 0 1rem;
+    flex: 1;
+    padding: 0.5rem 1rem;
+  }
+  
+  .item-column {
+    flex: 1;
+    padding: 0.25rem 0;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .item-label,
+  .item-value {
+    flex: 1;
+  }
+
+  .item-label {
+    font-weight: bold;
+  }
+ 
+  @container itemGrid (width > 800px) {
+    .item-grid-head {
+      display: block;
+    }
+
+    .item-grid-body {
+      gap: 0;
+    }    
+    
+    .item {
+      flex-direction: row;
+    }    
+
+    .item-label {
+      display: none;
+    }
+  }
+}

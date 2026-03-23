@@ -1,0 +1,15 @@
+.multiSelect {
+  .multiSelectOptions {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+  .multiSelectOption {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+}

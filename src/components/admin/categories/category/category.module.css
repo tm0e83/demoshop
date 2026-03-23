@@ -1,0 +1,18 @@
+.category {
+  .active {
+    color: var(--color-success);
+  }
+
+  .inactive {
+    color: var(--color-danger);
+  }
+
+  .column-status {
+    max-width: 100px;
+  }
+
+  .column-actions {
+    gap: 0.5rem;
+    max-width: 150px;
+  }
+}

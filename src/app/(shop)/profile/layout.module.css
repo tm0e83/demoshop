@@ -1,0 +1,45 @@
+.layout {
+  flex: 1;
+	
+	main {
+		flex: 1;
+		margin: 0 auto;
+		padding: 2.5rem 1rem;
+	}
+
+	.columns {
+		flex: 1;
+		display: flex;
+		flex-wrap: wrap;
+    margin: 0 auto;
+		
+		.columnLeft,
+		.columnRight {
+			flex: 1;
+		}
+
+		.columnRight {
+			max-width: 200px;
+		}
+		
+		@media (max-width: 799px) {
+			flex-direction: column;
+			
+			&>* {
+				order: 3;
+			}
+		
+			.page-title  {
+				order: 1;
+			}
+			
+			.columnRight {
+				order: 2;
+			}
+		}
+	
+		@media (min-width: 800px) {
+			gap: 0 2rem;
+		}
+	}
+}

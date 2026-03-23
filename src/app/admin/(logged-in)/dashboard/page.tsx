@@ -1,0 +1,38 @@
+'use client';
+
+import Card from '@/components/card';
+import PageTitle from '@/components/page-title';
+import Title from '@/components/title';
+import {useCategories, useProducts} from '@/hooks';
+import { useCustomers, useOrders } from '@/hooks';
+
+export default function DashboardPage() {
+  const { categories } = useCategories();
+  const { products } = useProducts();
+  const { customers } = useCustomers();
+  const { orders } = useOrders();
+
+  return (
+    <div className="dashboard-page">
+      <PageTitle>Dashboard</PageTitle>
+      <div className="statistics d-flex gap-4">
+        <Card className="flex-1"> 
+          <Title level={3} className="text-center">Categories</Title>
+          <p className="text-center">{categories.length}</p>
+        </Card>
+        <Card className="flex-1">
+          <Title level={3} className="text-center">Products</Title>
+          <p className="text-center">{products.length}</p>
+        </Card>
+        <Card className="flex-1">
+          <Title level={3} className="text-center">Orders</Title>
+          <p className="text-center">{orders.length}</p>
+        </Card>
+        <Card className="flex-1">
+          <Title level={3} className="text-center">Customers</Title>
+          <p className="text-center">{customers.length}</p>
+        </Card>
+      </div>
+    </div>
+  );
+}

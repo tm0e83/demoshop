@@ -1,0 +1,26 @@
+.select {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  position: relative;
+
+  select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  &.isInvalid {
+    select {
+      border-color: var(--color-danger);
+    }
+
+    .fieldError {
+      color: var(--color-danger);
+      font-size: 0.875rem;
+      margin-top: 0.25rem;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.product {
+  .status-active {
+    color: var(--color-success);
+  }
+
+  .status-inactive {
+    color: var(--color-danger);
+  }
+
+  .column-status,
+  .column-actions {
+    max-width: 100px;
+  }
+}

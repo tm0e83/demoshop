@@ -1,0 +1,13 @@
+.logo {
+  font-size: 1.75rem;
+  color: var(--body-font-color);
+  text-decoration: none !important;
+
+  strong {
+    font-weight: 900;
+  }
+
+  span {
+    font-weight: 100;
+  }
+}

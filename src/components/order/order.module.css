@@ -1,0 +1,13 @@
+.order {
+  .statusActive {
+    color: var(--color-success);
+  }
+
+  .statusInactive {
+    color: var(--color-danger);
+  }
+
+  .columnActions {
+    max-width: 100px;
+  }
+}

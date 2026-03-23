@@ -1,0 +1,19 @@
+.checkoutSummary {
+  flex: 1;
+
+  @media (min-width: 992px) {
+    max-width: 300px;
+  }
+
+  .inner {
+    position: sticky;
+    top: 1rem;
+  }
+
+  .cartSummaryRow {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.5rem 0;
+  }
+}

@@ -1,0 +1,10 @@
+.ordersPage {
+  .actions {
+    margin-bottom: 2rem;
+  }
+
+  .column-status,
+  .column-actions {
+    max-width: 100px;
+  } 
+}

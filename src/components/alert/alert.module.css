@@ -1,0 +1,31 @@
+.alert {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  border: 1px solid transparent;
+
+  &.alertInfo {
+    background-color: color-mix(in srgb, var(--color-info), white 85%);
+    border-color: color-mix(in srgb, var(--color-info), white 65%);
+    color: var(--color-info);
+  }
+
+  &.alertDanger {
+    background-color: color-mix(in srgb, var(--color-danger), white 85%);
+    border-color: color-mix(in srgb, var(--color-danger), white 65%);
+    color: var(--color-danger);
+  }
+
+  &.alertSuccess {
+    background-color: color-mix(in srgb, var(--color-success), white 85%);
+    border-color: color-mix(in srgb, var(--color-success), white 65%);
+    color: var(--color-success);
+  }
+
+  &.alertWarning {
+    background-color: color-mix(in srgb, var(--color-warning), white 85%);
+    border-color: color-mix(in srgb, var(--color-warning), white 65%);
+    color: var(--color-warning);
+  }
+}
