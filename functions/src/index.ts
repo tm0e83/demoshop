@@ -18,12 +18,13 @@ export const resetDatabase = onSchedule("0 2 * * *", async () => {
 export const resetUsers = onSchedule("0 2 * * *", async () => {
   const listUsersResult = await admin.auth().listUsers();
   const users = listUsersResult.users;
-  const usersToDelete = users.filter(u => {
-    return u.uid !== "yDoOOSVHzxXk8tnvWFeY2jtvlGh2" && u.uid !== "ze1ShRe4QQMI4gxadeKFngjsDo22"
-  }).map(u => u.uid);
-  
+  const usersToDelete = users.filter((u) => {
+    return u.uid !== "yDoOOSVHzxXk8tnvWFeY2jtvlGh2" &&
+      u.uid !== "ze1ShRe4QQMI4gxadeKFngjsDo22";
+  }).map((u) => u.uid);
+
   try {
-    await admin.auth().deleteUsers(usersToDelete);    
+    await admin.auth().deleteUsers(usersToDelete);
     console.log(`${usersToDelete.length} Benutzer wurden erfolgreich entfernt.`);
   } catch (error) {
     console.error("Error resetting users:", error);
