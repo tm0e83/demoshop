@@ -9,8 +9,10 @@ const useModal = () => {
 
   return {
     isOpen: useSelector((state: RootState) => state.modal.isOpen),
-    content: useSelector((state: RootState) => state.modal.content),
-    openModal: (content: React.ReactNode) => dispatch(modalStore.openModal(content)),
+    type: useSelector((state: RootState) => state.modal.type),
+    props: useSelector((state: RootState) => state.modal.props),
+    openModal: (type: string, props: Record<string, unknown> = {}) =>
+      dispatch(modalStore.openModal({ type, props })),
     closeModal: () => dispatch(modalStore.closeModal())
   }
 };

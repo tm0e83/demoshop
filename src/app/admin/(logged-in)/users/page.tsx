@@ -16,9 +16,7 @@ export default function UserOverviewPage() {
         <PageTitle>Users</PageTitle>
 
         {users.length === 0 ? (
-          <>
-            <p>No user available.</p>
-          </>
+          <p>No user available.</p>
         ) : (
           <>
             <div className="users item-grid">

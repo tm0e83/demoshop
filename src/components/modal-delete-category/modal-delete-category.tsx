@@ -33,18 +33,8 @@ export default function ModalDeleteCategory({ category }: ModalDeleteCategoryPro
     <>
       <Title level={3}>Delete category?</Title>
       <div className="d-flex gap-4 justify-between">
-        <Button
-          onClick={closeModal}
-          className="btn btn-secondary btn-sm"
-        >
-          Cancel
-        </Button>
-        <Button
-          onClick={handleDelete}
-          className="btn btn-danger btn-sm"
-        >
-          Delete
-        </Button>
+        <Button onClick={closeModal} color="secondary">Cancel</Button>
+        <Button onClick={handleDelete} color="danger">Delete</Button>
       </div>
     </>
   );

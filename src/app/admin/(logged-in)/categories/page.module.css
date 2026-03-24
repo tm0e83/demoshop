@@ -1,13 +1,13 @@
-.category-overview-page {
+.categories {
   .actions {
     margin-bottom: 2rem;
   }
 
-  .column-status {
+  .columnStatus {
     max-width: 100px;
   }
 
-  .column-actions {
+  .columnActions {
     gap: 0.5rem;
     max-width: 150px;
   }
