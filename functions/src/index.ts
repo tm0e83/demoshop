@@ -25,7 +25,8 @@ export const resetUsers = onSchedule("0 2 * * *", async () => {
 
   try {
     await admin.auth().deleteUsers(usersToDelete);
-    console.log(`${usersToDelete.length} Benutzer wurden erfolgreich entfernt.`);
+    const count = usersToDelete.length;
+    console.log(`${count} Benutzer wurden erfolgreich entfernt.`);
   } catch (error) {
     console.error("Error resetting users:", error);
   }
