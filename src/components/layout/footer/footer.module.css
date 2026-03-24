@@ -2,6 +2,13 @@
   padding: 2.5rem 1rem;
   background-color: var(--color-gray-100);
 
+  .footerMenus {
+    display: flex;
+    flex: 1;
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+
   .footerColumnTitle {
     font-weight: 700;
     text-transform: uppercase;
@@ -14,6 +21,11 @@
     display: flex;
     gap: 0.5rem;
     flex-direction: column;
+  }
+
+  .socialLinks {
+    display: flex;
+    gap: 1rem;
   }
 
   a {
