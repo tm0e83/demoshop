@@ -12,7 +12,7 @@ export default function RootLayout({
   return (
     <div className={styles.layout}>
       <Header />
-      <main>
+      <main className="container">
         {children}
       </main>
       <Footer />

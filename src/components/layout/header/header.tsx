@@ -1,4 +1,5 @@
 'use client';
+
 import styles from './header.module.css';
 import type { CartItemType } from '@/typings';
 import { LogIn, Settings, ShoppingBasket, User } from 'lucide-react';
@@ -15,7 +16,7 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <div className={styles.container}>
+      <div className="container">
         <Logo />
         <nav className={`nav ${styles.categoryNav}`}>
           {categories &&

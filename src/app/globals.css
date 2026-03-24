@@ -17,14 +17,14 @@ body {
   --color-gray-800: rgb(30, 41, 59);
   --color-gray-900: rgb(15, 23, 42);
   --color-gray-950: rgb(2, 6, 23);
-  --color-primary: #007bff;
+  --color-primary: #000;
   --color-secondary: var(--color-primary);
   --color-info: #0c5460;
   --color-danger: #dc3545;
   --color-success: #28a745;
   --color-warning: #d2a205;
   --color-disabled: var(--color-gray-400);
-  --body-font-color: var(--color-gray-800);
+  --body-font-color: #000;
 
   font-size: 16px;
   color: var(--body-font-color);
@@ -198,8 +198,12 @@ a {
   color: var(--color-danger);
 }
 
-.w-100 {
+.w-full {
   width: 100%;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .container {

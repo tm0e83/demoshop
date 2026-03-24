@@ -2,7 +2,6 @@
 'use client';
 
 import styles from './page.module.css';
-
 import { useMemo, useState } from 'react';
 import { useParams } from 'next/navigation'
 import { Search } from 'lucide-react';
@@ -84,7 +83,7 @@ export default function CategoryPage() {
   return (
     <div className={styles.category}>
       {category && (
-        <div className="category-page-header">
+        <div className={styles.categoryPageHeader}>
           <PageTitle center={true}>{category.title}</PageTitle>
           <p className="text-center">{category.description}</p>
         </div>
@@ -92,8 +91,8 @@ export default function CategoryPage() {
 
       {products && products.length > 0 ? (
         <>
-          <div className="category-page-contents">
-            <Card className="product-filters">
+          <div className={styles.categoryPageContents}>
+            <Card className={styles.productFilters}>
               <div>
                 <div className="input-wrap">
                   <BaseInput

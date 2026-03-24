@@ -35,7 +35,6 @@ export default function RangeSlider({ min, max, step = 1, onChange }: RangeSlide
       <div className={styles.rangeSlider}>
         <div className={styles.slider}>
           <div className={styles.track}></div>
-          <div className={styles.rangeHighlight} id="rangeHighlight"></div>
           <input type="range" id="minRange" min={min} max={max} step={step} value={minValue} onChange={handleMinChange} />
           <input type="range" id="maxRange" min={min} max={max} step={step} value={maxValue} onChange={handleMaxChange} />
         </div>

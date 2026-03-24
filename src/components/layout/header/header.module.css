@@ -1,7 +1,7 @@
 .header {
   background-color: var(--color-gray-100);
 
-  .container {
+  &>div {
     padding: 1rem;
     text-align: center;
     display: flex;

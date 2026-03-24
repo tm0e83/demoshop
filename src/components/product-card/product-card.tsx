@@ -2,6 +2,7 @@ import styles from './product-card.module.css';
 import type { ProductType } from '@/typings';
 import { formatCurrency } from '@/utils';
 import Card from '@/components/card/card';
+import ImagePlaceholder from '@/components/image-placeholder'
 
 export default function ProductCard({ product }: { product: ProductType }) {
   return (
@@ -10,11 +11,7 @@ export default function ProductCard({ product }: { product: ProductType }) {
         {product.title}
       </div>
       <div className={styles.productImage}>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={product.image || 'https://placehold.co/300x225?text=No+Image'}
-          alt={product.title}
-        />
+        <ImagePlaceholder />
       </div>
       <div className={styles.productPrice}>{formatCurrency(product.price)}</div>
     </Card>

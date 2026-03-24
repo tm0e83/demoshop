@@ -19,7 +19,7 @@ export default function UserMenu() {
             <span>{user?.email}</span>
           </div>
         </li>
-        <li><Button onClick={logout} className="w-100">Logout</Button></li>  
+        <li><Button onClick={logout} className="w-full">Logout</Button></li>  
       </ul> 
     </div>
   );

@@ -9,6 +9,7 @@ import { cartStore } from '@/store';
 import { formatCurrency } from '@/utils';
 import Button from '@/components/button';
 import QuantityInput from '@/components/input/quantity-input';
+import ImagePlaceholder from '@/components/image-placeholder';
 
 type CartItemProps = {
   cartItem: CartItemType;
@@ -31,11 +32,7 @@ export default function CartItem({ cartItem, quantityChangeable = false, removab
     <div className={styles.cartItem}>
       <div className={styles.cartItemImage}>
         <Link href={`/product/${cartItem.id}`}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={cartItem.image || 'https://placehold.co/300x225?text=No+Image'}
-            alt={cartItem.title}
-          />
+          <ImagePlaceholder />
         </Link>
       </div>
       <div className={styles.cartItemDetails}>

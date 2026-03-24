@@ -10,21 +10,11 @@
 
   .track {
     position: absolute;
-    height: 6px;
-    background: #ddd;
+    height: 1px;
+    background: #000;
     width: 100%;
     top: 50%;
     transform: translateY(-50%);
-    border-radius: 5px;
-  }
-
-  .rangeHighlight {
-    position: absolute;
-    height: 6px;
-    background: #007bff;
-    top: 50%;
-    transform: translateY(-50%);
-    border-radius: 5px;
   }
 
   input[type='range'] {
@@ -35,6 +25,7 @@
     margin: 0;
     background: none;
     pointer-events: none;
+    appearance: none;
     -webkit-appearance: none;
   }
 
@@ -43,7 +34,7 @@
     width: 10px;
     height: 18px;
     border-radius: 3px;
-    background: #007bff;
+    background: #000;
     cursor: pointer;
     -webkit-appearance: none;
   }
@@ -53,7 +44,7 @@
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    background: #007bff;
+    background: #000;
     cursor: pointer;
   }
 

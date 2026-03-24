@@ -7,6 +7,7 @@ import { useParams } from 'next/navigation';
 import { toast } from 'react-toastify';
 import Alert from '@/components/alert';
 import Button from '@/components/button';
+import ImagePlaceholder from '@/components/image-placeholder';
 import { useProduct } from '@/hooks';
 import { cartStore } from '@/store';
 import { formatCurrency } from '@/utils';
@@ -28,10 +29,10 @@ export default function ProductDetailPage() {
   return (
     <div className={styles.productDetailPage}>
       <div className="product-image-column">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={product.image || 'https://placehold.co/600x450?text=No+Image'}
-          alt={product.title}
+        <ImagePlaceholder
+          width={600}
+          height={450}
+          label={product.title}
         />
       </div>
       <div className="product-details-column">

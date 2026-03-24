@@ -57,8 +57,8 @@ export default function Order({ order, showCustomer = false }: OrderProps) {
         <div className="item-value">{formatCurrency(totalPrice)}</div>
       </div>
       <div className={`item-column ${styles.columnActions}`}>
-        <Link href={`orders/${order.id}`} title="View order details" className="w-100">
-          <Button className="w-100">Details</Button>
+        <Link href={`orders/${order.id}`} title="View order details" className="w-full">
+          <Button className="w-full">Details</Button>
         </Link>
       </div>
     </div>

@@ -284,6 +284,28 @@
       "lastname": "Ribeiro Szyszka",
       "role": "admin",
       "uid": "yDoOOSVHzxXk8tnvWFeY2jtvlGh2"
+    },
+    "ze1ShRe4QQMI4gxadeKFngjsDo22": {
+      "addresses": {
+        "-OoUHM6xbxMCIv-SKFZm": {
+          "city": "Musterstadt",
+          "country": "Germany",
+          "firstname": "Max",
+          "id": "-OoUHM6xbxMCIv-SKFZm",
+          "lastname": "Mustermann",
+          "street": "Musterstr. 1",
+          "zipcode": "12345"
+        }
+      },
+      "birthdate": "1970-01-01",
+      "createdAt": 1774346401392,
+      "defaultBillingAddress": "-OoUHM6xbxMCIv-SKFZm",
+      "defaultShippingAddress": "-OoUHM6xbxMCIv-SKFZm",
+      "email": "test@demoshop.com",
+      "firstname": "Max",
+      "lastname": "Mustermann",
+      "role": "admin",
+      "uid": "ze1ShRe4QQMI4gxadeKFngjsDo22"
     }
   }
 }

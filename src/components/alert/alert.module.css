@@ -24,8 +24,8 @@
   }
 
   &.alertWarning {
-    background-color: color-mix(in srgb, var(--color-warning), white 85%);
-    border-color: color-mix(in srgb, var(--color-warning), white 65%);
-    color: var(--color-warning);
+    background-color: color-mix(in srgb, var(--color-warning), white 88%);
+    border-color: color-mix(in srgb, var(--color-warning), white 55%);
+    color: color-mix(in srgb, var(--color-warning), black 10%);
   }
 }
