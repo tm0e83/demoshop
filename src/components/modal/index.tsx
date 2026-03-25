@@ -1,13 +1,17 @@
 'use client';
 
+import type { CategoryType, ProductType } from '@/typings';
 import styles from './modal.module.css';
 import { useModal } from "@/hooks";
-import type { CategoryType } from '@/typings';
-import ModalDeleteCategory from '@/components/modal-delete-category/modal-delete-category';
+import ModalDeleteCategory from '@/components/modal-delete-category';
+import ModalDeleteProduct from '@/components/modal-delete-product';
 
 const modalRegistry: Record<string, (props: Record<string, unknown>) => React.ReactNode> = {
   deleteCategory: (props) => (
     <ModalDeleteCategory category={props.category as CategoryType} />
+  ),
+  deleteProduct: (props) => (
+    <ModalDeleteProduct product={props.product as ProductType} />
   ),
 };
 

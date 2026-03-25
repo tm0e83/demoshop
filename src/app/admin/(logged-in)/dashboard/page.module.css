@@ -1,0 +1,44 @@
+.dashboard {
+  .red,
+  .green,
+  .blue,
+  .yellow {
+    color: #fff;
+  }
+
+  .red {
+    background: var(--palette-red);
+    background: linear-gradient(
+      135deg,
+      color-mix(var(--palette-red), #fff 15%),
+      var(--palette-red)
+    );
+  }
+
+  .green {
+    background: var(--palette-green);
+    background: linear-gradient(
+      135deg,
+      color-mix(var(--palette-green), #fff 15%),
+      var(--palette-green)
+    );
+  }
+
+  .blue {
+    background: var(--palette-blue);
+    background: linear-gradient(
+      135deg,
+      color-mix(var(--palette-blue), #fff 15%),
+      var(--palette-blue)
+    );    
+  }
+
+  .yellow {
+    background: var(--palette-yellow);
+    background: linear-gradient(
+      135deg,
+      color-mix(var(--palette-yellow), #fff 15%),
+      var(--palette-yellow)
+    );
+  }
+}

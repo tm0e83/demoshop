@@ -7,12 +7,16 @@
     color: var(--color-danger);
   }
 
-  .columnStatus {
+  .status {
     max-width: 100px;
   }
 
-  .columnActions {
+  .actions {
     gap: 0.5rem;
-    max-width: 150px;
-  }
+    justify-content: flex-end;
+
+    @media (min-width: 1024px) {
+      max-width: 150px;
+    }
+  }  
 }

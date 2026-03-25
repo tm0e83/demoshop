@@ -3,12 +3,11 @@
     margin-bottom: 2rem;
   }
 
-  .columnStatus {
+  .status {
     max-width: 100px;
-  }
+  } 
 
-  .columnActions {
-    gap: 0.5rem;
-    max-width: 150px;
-  }
+  .actions {
+    max-width: 100px;
+  } 
 }

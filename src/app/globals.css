@@ -26,6 +26,11 @@ body {
   --color-disabled: var(--color-gray-400);
   --body-font-color: #000;
 
+  --palette-red: #e83f6f;
+  --palette-green: #32936f;
+  --palette-blue: #2274a5;
+  --palette-yellow: #ffbf00;
+
   font-size: 16px;
   color: var(--body-font-color);
   font-family: 'Work Sans', sans-serif;
@@ -69,6 +74,10 @@ body {
 
 .justify-end {
   justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .flex-col {

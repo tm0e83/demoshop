@@ -4,6 +4,7 @@
 import styles from './page.module.css';
 
 import { useUser } from '@/hooks';
+import Card from '@/components/card';
 import PageTitle from '@/components/page-title';
 import User from '@/components/admin/users/user';
 
@@ -12,7 +13,7 @@ export default function UserOverviewPage() {
 
   return (
     <>
-      <div className={styles.overview}>
+      <Card className={styles.overview}>
         <PageTitle>Users</PageTitle>
 
         {users.length === 0 ? (
@@ -33,7 +34,7 @@ export default function UserOverviewPage() {
             </div>
           </>
         )}
-      </div>      
+      </Card>      
     </>
   );
 };

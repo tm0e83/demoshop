@@ -5,7 +5,7 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import { ToastContainer } from 'react-toastify';
 import ScrollToTop from '@/components/scroll-to-top';
 import Modal from '@/components/modal';
-import { Providers } from '@/providers'
+import StoreProvider from '@/providers'
 import ClientLayout from './client-layout'
 
 const geistSans = Geist({
@@ -45,12 +45,12 @@ export default function RootLayout({
           pauseOnHover={false}
         />
 
-        <Providers>
+        <StoreProvider>
           <ClientLayout>
             {children}
             <Modal />
           </ClientLayout>
-        </Providers>
+        </StoreProvider>
       </body>
     </html>
   );

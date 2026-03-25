@@ -222,6 +222,28 @@ export const updateProduct = async (
   }
 };
 
+export const deleteProduct = async (productId: string): Promise<boolean> => {
+  try {
+
+    const productRef = ref(database, `products/${productId}`);
+    const snapshot = await get(productRef);
+    const product: ProductType = snapshot.val();
+
+    const updates: Record<string, null> = {};
+    updates[`products/${productId}`] = null;
+
+    Object.keys(product.categoryIds).forEach((categoryId: string) => {
+      updates[`productsByCategory/${categoryId}/${productId}`] = null;
+    });
+
+    await update(ref(database), updates);
+    return true;
+  } catch (error) {
+    console.error('Error deleting product:', error);
+    throw error;
+  }
+};
+
 export const saveOrder = async (orderData: OrderType): Promise<void> => {
   try {
     const ordersRef: DatabaseReference = ref(database, 'orders');

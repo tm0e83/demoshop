@@ -5,6 +5,7 @@ import styles from './page.module.css';
 
 import { useOrders } from '@/hooks';
 import Order from '@/components/order';
+import Card from '@/components/card';
 import PageTitle from '@/components/page-title';
 
 export default function OrderOverviewPage() {
@@ -12,7 +13,7 @@ export default function OrderOverviewPage() {
 
   return (
     <>
-      <div className={styles.orderPverviewPage}>
+      <Card className={styles.orderPverviewPage}>
         <PageTitle>Orders</PageTitle>
 
         {orders.length === 0 ? (
@@ -29,7 +30,7 @@ export default function OrderOverviewPage() {
                   <div className="item-column">Customer</div>
                   <div className="item-column">Items</div>
                   <div className="item-column">Total</div>
-                  <div className={`item-column ${styles.actions}`}>Actions</div>
+                  <div className={`item-column ${styles.actions}`}>{/* Actions */}</div>
                 </div>
               </div>
               <div className="item-grid-body">
@@ -38,7 +39,7 @@ export default function OrderOverviewPage() {
             </div>
           </>
         )}
-      </div>      
+      </Card>      
     </>
   );
 };

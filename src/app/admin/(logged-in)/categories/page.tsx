@@ -3,23 +3,22 @@
 import styles from './page.module.css';
 
 import type { CategoryType } from '@/typings';
-import Link from 'next/link';
 import { Plus } from 'lucide-react';
 import { useCategories, useModal } from '@/hooks';
 import Alert from '@/components/alert';
 import Button from '@/components/button';
+import Card from '@/components/card';
 import PageTitle from '@/components/page-title';
 import Category from '@/components/admin/categories/category';
+
 export default function CategoryOverviewPage() {
   const { openModal } = useModal();
   const { categories } = useCategories();
 
   const createCategoryButton = () => (
-    <Link href="/admin/new" >
-      <Button>
-        <Plus size={16} /> Create category
-      </Button>
-    </Link>
+    <Button href="/admin/categories/new" Icon={Plus}>
+      Create category
+    </Button>
   );
 
   const handleDeleteButtonClick = (category: CategoryType) => {
@@ -27,7 +26,7 @@ export default function CategoryOverviewPage() {
   };
 
   return (
-    <div className={styles.categories}>
+    <Card className={styles.categories}>
       <PageTitle>Categories</PageTitle>
 
       {categories.length === 0 ? (
@@ -43,10 +42,10 @@ export default function CategoryOverviewPage() {
           <div className="item-grid">
             <div className="item-grid-head">
               <div className="item">
-                <div className={`item-column ${styles.columnStatus}`}>Status</div>
+                <div className={`item-column ${styles.status}`}>Status</div>
                 <div className="item-column">Title</div>
                 <div className="item-column">Description</div>
-                <div className={`item-column ${styles.columnActions}`}>Actions</div>
+                <div className={`item-column ${styles.actions}`}>{/* Actions */}</div>
               </div>
             </div>
             <div className="item-grid-body">
@@ -57,6 +56,6 @@ export default function CategoryOverviewPage() {
           </div>
         </>
       )}
-    </div>
+    </Card>
   );
 }

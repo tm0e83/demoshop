@@ -17,7 +17,6 @@ const cartSlice = createSlice({
   initialState,
   reducers: {
     setOrderPlaced: (state, action: { type: string, payload: boolean }) => {
-      console.log(action);
       state.orderPlaced = action.payload;
     },
 

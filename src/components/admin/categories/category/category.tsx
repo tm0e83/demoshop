@@ -16,7 +16,7 @@ export default function Category({ category, onDelete }: CategoryProps) {
   return (
     <>
       <div className={`${styles.category} item`}>
-        <div className={`item-column ${styles.columnStatus}`}>
+        <div className={`item-column ${styles.status}`}>
           <div className="item-label">Status:</div>
           <div className={`item-value ${styles[category.active ? 'active' : 'inactive']}`}>
             {category.active ? 'Active' : 'Inactive' }
@@ -30,7 +30,7 @@ export default function Category({ category, onDelete }: CategoryProps) {
           <div className="item-label">Description:</div>
           <div className="item-value">{category.description}</div>
         </div>
-        <div className={`item-column ${styles.columnActions}`}>
+        <div className={`item-column ${styles.actions}`}>
           <Link href={`/admin/categories/edit/${category.id}`}>
             <Button size="small">Edit</Button>
           </Link>

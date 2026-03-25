@@ -1,5 +1,6 @@
 .logo {
   font-size: 1.75rem;
+  line-height: 1;
   color: var(--body-font-color);
   text-decoration: none !important;
 

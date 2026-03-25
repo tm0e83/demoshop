@@ -1,10 +1,7 @@
 .orderPverviewPage {
   .actions {
-    margin-bottom: 2rem;
-  }
-
-  .status,
-  .actions {
-    max-width: 100px;
-  }  
+    gap: 0.5rem;
+    max-width: 150px;
+    justify-content: flex-end;
+  } 
 }

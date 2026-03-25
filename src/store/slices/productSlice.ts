@@ -15,6 +15,9 @@ const productSlice = createSlice({
   name: 'product',
   initialState,
   reducers: {
+    removeProduct: (state, action: { type: string, payload: ProductType['id'] }) => {
+      state.items = state.items.filter(item => item.id !== action.payload);
+    },    
     setProducts: (state, action: { type: string, payload: ProductType[] }) => {
       state.items = action.payload;
     },

@@ -1,5 +1,6 @@
 'use client';
 
+import styles from './page.module.css';
 import Card from '@/components/card';
 import PageTitle from '@/components/page-title';
 import Title from '@/components/title';
@@ -13,22 +14,22 @@ export default function DashboardPage() {
   const { orders } = useOrders();
 
   return (
-    <div className="dashboard-page">
+    <div className={styles.dashboard}>
       <PageTitle>Dashboard</PageTitle>
       <div className="statistics d-flex gap-4">
-        <Card className="flex-1"> 
+        <Card className={`flex-1 ${styles.red}`} href="/admin/categories"> 
           <Title level={3} className="text-center">Categories</Title>
           <p className="text-center">{categories.length}</p>
         </Card>
-        <Card className="flex-1">
+        <Card className={`flex-1 ${styles.green}`} href="/admin/products"> 
           <Title level={3} className="text-center">Products</Title>
           <p className="text-center">{products.length}</p>
         </Card>
-        <Card className="flex-1">
+        <Card className={`flex-1 ${styles.blue}`} href="/admin/orders"> 
           <Title level={3} className="text-center">Orders</Title>
           <p className="text-center">{orders.length}</p>
         </Card>
-        <Card className="flex-1">
+        <Card className={`flex-1 ${styles.yellow}`} href="/admin/customers"> 
           <Title level={3} className="text-center">Customers</Title>
           <p className="text-center">{customers.length}</p>
         </Card>

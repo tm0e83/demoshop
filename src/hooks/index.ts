@@ -5,6 +5,7 @@ export { default as useCategoryProducts } from './useCategoryProducts';
 export { default as useCustomers } from './useCustomers';
 export { default as useInitializeCart } from './useInitializeCart';
 export { default as useLogout } from './useLogout';
+export { default as useMediaQuery } from './useMediaQuery';
 export { default as useModal } from './useModal';
 export { default as useOrder } from './useOrder';
 export { default as useOrders } from './useOrders';

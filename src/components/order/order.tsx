@@ -4,7 +4,6 @@ import styles from './order.module.css';
 import type { OrderType, UserType } from '@/typings';
 import { useState, useEffect } from 'react';
 import { formatCurrency, formatDate } from '@/utils';
-import Link from 'next/link';
 import Button from '@/components/button';
 import { getUser } from '@/services/firebase.service';
 import { useShippingMethods } from '@/hooks';
@@ -33,7 +32,7 @@ export default function Order({ order, showCustomer = false }: OrderProps) {
   }, [showCustomer, order.uid]);
 
   return (
-    <div className="item">
+    <div className={`${styles.order} item`}>
       <div className="item-column">
         <div className="item-label">Date</div>
         <div className="item-value">{formatDate(order.createdAt as number)}</div>
@@ -56,10 +55,14 @@ export default function Order({ order, showCustomer = false }: OrderProps) {
         <div className="item-label">Total</div>
         <div className="item-value">{formatCurrency(totalPrice)}</div>
       </div>
-      <div className={`item-column ${styles.columnActions}`}>
-        <Link href={`orders/${order.id}`} title="View order details" className="w-full">
-          <Button className="w-full">Details</Button>
-        </Link>
+      <div className={`item-column ${styles.actions}`}>
+        <Button
+          href={`orders/${order.id}`}
+          title="View order details"
+          size="small"
+        >
+          Details
+        </Button>
       </div>
     </div>
   );
