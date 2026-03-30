@@ -1,5 +1,6 @@
 'use client';
 
+import styles from './page.module.css';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
@@ -7,9 +8,8 @@ import Link from 'next/link';
 import { cartStore } from '@/store';
 import { useCart, usePaymentMethods } from '@/hooks';
 import Button from '@/components/button';
-import Card from '@/components/card';
 import CheckoutSummary from '@/components/checkout-summary';
-import Title from '@/components/title';
+import PageTitle from '@/components/page-title';
 
 export default function CheckoutPaymentPage() {
   const dispatch = useDispatch();
@@ -27,11 +27,11 @@ export default function CheckoutPaymentPage() {
   }, [paymentMethods, cart.paymentMethodId, dispatch]);
 
   return (
-    <div className="checkout-payment-page">
-      <Title>Select payment method</Title>
+    <div className={styles.paymentPage}>
+      <PageTitle center={true}>Select payment method</PageTitle>
 
-      <div className="d-flex gap-4 flex-wrap">
-        <Card className="flex-1">
+      <div className={styles.paymentContent}>
+        <div className={styles.methods}>
           {paymentMethods.map((method, index) => (
             <div key={method.id} className="d-flex align-items-center gap-2 mb-2">
               <div>
@@ -49,16 +49,16 @@ export default function CheckoutPaymentPage() {
               </label>
             </div>
           ))}
-        </Card>
+        </div>
         <CheckoutSummary />
       </div>
 
       <div className="d-flex gap-4 justify-between">
         <Link href="/checkout/shipping">
-          <Button color="secondary"><ArrowLeft /> Zurück</Button>
+          <Button color="secondary" Icon={ArrowLeft}> Zurück</Button>
         </Link>
         <Link href="/checkout/overview">
-          <Button>Proceed <ArrowRight /></Button>
+          <Button Icon={ArrowRight} iconAlign="right">Proceed</Button>
         </Link>
       </div>
     </div>

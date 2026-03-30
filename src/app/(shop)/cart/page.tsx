@@ -19,7 +19,7 @@ export default function CartPage() {
       <PageTitle center={true}>Shopping Cart</PageTitle>
 
       <div className={styles.cartContent}>
-        <Card className={styles.cartItemList}>
+        <div className={styles.cartItemList}>
           {cart.items.length === 0 ? (
             <div>Your cart is empty</div>
           ) : (
@@ -32,7 +32,7 @@ export default function CartPage() {
               />
             ))
           )}
-        </Card>
+        </div>
 
         {cart.items.length > 0 && (
           <CheckoutSummary showVoucherInput={true} />
@@ -41,15 +41,15 @@ export default function CartPage() {
 
       <div className="d-flex gap-4 justify-between">
         <Link href="/">
-          <Button color="secondary" className="w-full">
-            <ArrowLeft size={16} /> <span>Continue shopping</span>
+          <Button color="secondary" className="w-full" Icon={ArrowLeft}>
+            Continue shopping
           </Button>
         </Link>
 
         {cart.items.length > 0 && (
           <Link href="/checkout/address">
-            <Button className="w-full">
-              <span>Proceed to Checkout</span> <ArrowRight size={16} />
+            <Button className="w-full" Icon={ArrowRight} iconAlign="right">
+              Proceed to Checkout
             </Button>
           </Link>
         )}

@@ -1,5 +1,6 @@
 'use client';
 
+import styles from './page.module.css';
 import { useEffect } from 'react';
 import Link from 'next/link';
 import { useDispatch } from 'react-redux';
@@ -8,9 +9,8 @@ import { formatCurrency } from '@/utils';
 import { cartStore } from '@/store';
 import { useCart, useShippingMethods } from '@/hooks';
 import Button from '@/components/button'
-import Card from '@/components/card'
 import CheckoutSummary from '@/components/checkout-summary'
-import Title from '@/components/title'
+import PageTitle from '@/components/page-title';
 
 export default function CheckoutShippingPage() {
   const cart = useCart();
@@ -27,11 +27,11 @@ export default function CheckoutShippingPage() {
   }, [shippingMethods, cart.shippingMethodId, dispatch]);
 
   return (
-    <div className="checkout-shipping-page">
-      <Title>Select shipping method</Title>
+    <div className={styles.shippingPage}>
+      <PageTitle center={true}>Select shipping method</PageTitle>
 
-      <div className="d-flex gap-4 flex-wrap">
-        <Card className="flex-1">
+      <div className={styles.shippingContent}>
+        <div className={styles.methods}>
           {shippingMethods.map((method, index) => (
             <div key={method.id} className="d-flex align-items-center gap-2 mb-2">
               <div>
@@ -49,16 +49,16 @@ export default function CheckoutShippingPage() {
               </label>
             </div>
           ))}
-        </Card>
+        </div>
         <CheckoutSummary />
       </div>
 
       <div className="d-flex gap-4 justify-between">
         <Link href="/checkout/address">
-          <Button color="secondary"><ArrowLeft /> Zurück</Button>
+          <Button color="secondary" Icon={ArrowLeft}> Zurück</Button>
         </Link>
         <Link href="/checkout/payment">
-          <Button>Proceed <ArrowRight /></Button>
+          <Button Icon={ArrowRight} iconAlign="right">Proceed</Button>
         </Link>
       </div>
     </div>

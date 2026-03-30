@@ -58,37 +58,35 @@ export default function CheckoutAddressPage() {
 
   return (
     <div className={styles.address}>
-      <PageTitle>Addresses</PageTitle>
+      <PageTitle center={true}>Addresses</PageTitle>
 
-      <div className="d-flex gap-4 flex-wrap">
-        <Card className="flex-1">
-          <div className={styles.addresses}>
-            <div className={styles.shippingAddresses}>
-              <Title level={2}>Delivery address</Title>
-              <div className={styles.addressContainer}>
-                <div><input type="radio" checked onChange={() => handleShippingAddressChange(cart.shippingAddress)} /></div>
-                {cart.shippingAddress && <Address address={cart.shippingAddress} />}
-              </div>
-            </div>
-            <div className={styles.billingAddresses}>
-              <Title level={2}>Billing address</Title>
-              <div className={styles.addressContainer}>
-                <div><input type="radio" checked onChange={() => handleBillingAddressChange(cart.billingAddress)} /></div>
-                {cart.billingAddress && <Address address={cart.billingAddress} />}
-              </div>
+      <div className={styles.addressContent}>
+        <div className={`${styles.addresses}`}>
+          <div className={styles.shippingAddresses}>
+            <Title level={2}>Delivery address</Title>
+            <div className={styles.addressContainer}>
+              <div><input type="radio" checked onChange={() => handleShippingAddressChange(cart.shippingAddress)} /></div>
+              {cart.shippingAddress && <Address address={cart.shippingAddress} />}
             </div>
           </div>
-        </Card>
+          <div className={styles.billingAddresses}>
+            <Title level={2}>Billing address</Title>
+            <div className={styles.addressContainer}>
+              <div><input type="radio" checked onChange={() => handleBillingAddressChange(cart.billingAddress)} /></div>
+              {cart.billingAddress && <Address address={cart.billingAddress} />}
+            </div>
+          </div>
+        </div>
 
         <CheckoutSummary />
       </div>
 
       <div className="d-flex gap-4 justify-between">
         <Link href="/cart">
-          <Button color="secondary"><ArrowLeft /> Zurück</Button>
+          <Button color="secondary" Icon={ArrowLeft}>Zurück</Button>
         </Link>
         <Link href="/checkout/shipping">
-          <Button>Proceed <ArrowRight /></Button>
+          <Button Icon={ArrowRight} iconAlign="right">Proceed</Button>
         </Link>
       </div>
     </div>

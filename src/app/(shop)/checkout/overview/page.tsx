@@ -56,8 +56,8 @@ export default function CheckoutOrderOverviewPage() {
     <div className={styles.overview}>
       <PageTitle center={true}>Order Overview</PageTitle>
 
-      <div className="d-flex gap-4 flex-wrap">
-        <Card className="flex-1">
+      <div className={styles.overviewContent}>
+        <div className={styles.summary}>
           <div className={styles.addresses}>
             <div className={styles.shippingAddress}>
               <Title level={2}>Delivery address</Title>
@@ -79,21 +79,21 @@ export default function CheckoutOrderOverviewPage() {
             <div>{paymentMethods.find(method => method.id === cart.paymentMethodId)?.name}</div>
           </div>
 
-          <div className="items">
+          <div className={styles.items}>
             <Title level={2}>Products</Title>
             <div className={styles.itemList}>
               {cart.items.map((cartItem: CartItemType) => <CartItem key={cartItem.id} cartItem={cartItem} />)}
             </div>
           </div>
-        </Card>
+        </div>
         <CheckoutSummary />
       </div>
 
       <div className="d-flex gap-4 justify-between">
         <Link href="/checkout/payment">
-          <Button color="secondary"><ArrowLeft /> Zurück</Button>
+          <Button color="secondary" Icon={ArrowLeft}> Zurück</Button>
         </Link>
-        <Button onClick={handleSubmitOrder}>Buy now <Check /></Button>
+        <Button onClick={handleSubmitOrder} Icon={Check} iconAlign="right">Buy now</Button>
       </div>
     </div>
   );

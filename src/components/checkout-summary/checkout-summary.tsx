@@ -32,7 +32,7 @@ export default function CheckoutSummary({ showVoucherInput = false }: CheckoutSu
   const totalPrice = totalProductPrice + (selectedShippingMethod?.price ?? 0) - discountValue;
 
   return (
-    <Card className={styles.checkoutSummary}>
+    <div className={styles.checkoutSummary}>
       <div className={styles.inner}>
         <div>
           <h2>Order Summary</h2>
@@ -72,7 +72,7 @@ export default function CheckoutSummary({ showVoucherInput = false }: CheckoutSu
           </div>
         </div>
       </div>
-    </Card>
+    </div>
   );
 };
 

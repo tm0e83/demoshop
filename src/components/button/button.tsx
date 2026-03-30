@@ -13,6 +13,7 @@ type ButtonProps = {
   color?: 'primary' | 'danger' | 'secondary';
   size?: 'default' | 'small' | 'large';
   href?: string;
+  iconAlign?: 'left' | 'right';
 };
 
 const variantClasses: Record<string, string> = {
@@ -41,7 +42,8 @@ export default function Button({
   variant = 'default',
   color = 'primary',
   size = 'default',
-  href = ''
+  href = '',
+  iconAlign = 'left',
 }: ButtonProps) {
   const variantClass = variantClasses[variant] ?? '';
   const colorClass = colorClasses[color] ?? '';
@@ -57,8 +59,9 @@ export default function Button({
           className={fullClassName} 
           title={title}
         >
-          {Icon && <Icon size={16} />}
+          {Icon && iconAlign === 'left' && <Icon size={16} />}
           {children && (<span className={styles.label}>{children}</span>)}
+          {Icon && iconAlign === 'right' && <Icon size={16} />}
         </Link>
       );
     }
@@ -70,8 +73,9 @@ export default function Button({
         disabled={disabled}
         title={title}
       >
-        {Icon && <Icon size={16} />}
+        {Icon && iconAlign === 'left' && <Icon size={16} />}
         {children && (<span className={styles.label}>{children}</span>)}
+        {Icon && iconAlign === 'right' && <Icon size={16} />}
       </button>
     );
   };
