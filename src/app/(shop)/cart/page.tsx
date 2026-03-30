@@ -4,14 +4,16 @@ import styles from './cart.module.css';
 import type { CartItemType } from '@/typings';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
-import { useCart } from '@/hooks';
+import { useCart, useUser } from '@/hooks';
 import Button from '@/components/button';
 import CartItem from '@/components/cart-item';
 import CheckoutSummary from '@/components/checkout-summary';
 import PageTitle from '@/components/page-title';
+import Alert from '@/components/alert/alert';
 
 export default function CartPage() {
   const cart = useCart();
+  const { user } = useUser();
 
   return (
     <div className={styles.cardPage}>
@@ -19,21 +21,32 @@ export default function CartPage() {
 
       <div className={styles.cartContent}>
         <div className={styles.cartItemList}>
-          {cart.items.length === 0 ? (
-            <div>Your cart is empty</div>
-          ) : (
-            cart.items.map((cartItem: CartItemType) => (
-              <CartItem
-                key={cartItem.id}
-                cartItem={cartItem}
-                quantityChangeable={true}
-                removable={true}
-              />
-            ))
+          {user?.uid ? (
+            cart.items.length === 0 ? (
+              <div>Your cart is empty</div>
+            ) : (
+              cart.items.map((cartItem: CartItemType) => (
+                <CartItem
+                  key={cartItem.id}
+                  cartItem={cartItem}
+                  quantityChangeable={true}
+                  removable={true}
+                />
+              ))
+            )
+          ): (
+          <Alert>
+            <p>Please log in to add items to your cart.</p>
+            <Link href="/login">
+              <Button>
+                Log in
+              </Button>
+            </Link>
+          </Alert>
           )}
         </div>
 
-        {cart.items.length > 0 && (
+        {cart.items.length > 0 && user?.uid && (
           <CheckoutSummary showVoucherInput={true} />
         )}
       </div>
@@ -45,7 +58,7 @@ export default function CartPage() {
           </Button>
         </Link>
 
-        {cart.items.length > 0 && (
+        {cart.items.length > 0 && user?.uid && (
           <Link href="/checkout/address">
             <Button className="w-full" Icon={ArrowRight} iconAlign="right">
               Proceed to Checkout
