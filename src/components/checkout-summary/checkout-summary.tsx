@@ -5,7 +5,6 @@ import { useRouter } from 'next/navigation';
 import { formatCurrency } from '@/utils';
 import { useCart, useShippingMethods } from '@/hooks';
 import VoucherCodeInput from '@/components/voucher-code-input';
-import Card from '@/components/card/card';
 import LoadingScreen from '@/components/loading-screen';
 
 type CheckoutSummaryProps = {

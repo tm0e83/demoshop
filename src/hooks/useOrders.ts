@@ -23,7 +23,7 @@ const useOrders = () => {
     };
 
     fetchOrders();
-  }, [dispatch]);
+  }, [dispatch, user]);
 
   return {
     orders: useSelector((state: RootState) => state.order.items),

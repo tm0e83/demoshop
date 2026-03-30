@@ -15,7 +15,7 @@ export default function Sidebar({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     setIsExpanded(isDesktop);
-  }, [isDesktop]);  
+  }, [isDesktop, setIsExpanded]);
 
   return (
     <aside className={clsx(styles.sidebar, isExpanded && styles.expanded, isMinimized && styles.minimized)}>

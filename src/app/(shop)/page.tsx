@@ -26,7 +26,7 @@ export default function Home() {
           User: test@demoshop.com<br />
           Password: demo2026
         </p>
-        <p className="mb-0">Don't worry! You can't really mess things up - the database is reset every 24 hours.</p>
+        <p className="mb-0">Don&apos;t worry! You can&apos;t really mess things up - the database is reset every 24 hours.</p>
       </Alert>
 
       <div className="hero-banner">

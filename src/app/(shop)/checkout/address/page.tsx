@@ -12,7 +12,6 @@ import { useCart, useUser } from '@/hooks';
 import { cartStore } from '@/store';
 import Address from '@/components/address';
 import Button from '@/components/button';
-import Card from '@/components/card';
 import CheckoutSummary from '@/components/checkout-summary';
 import PageTitle from '@/components/page-title';
 import Title from '@/components/title';

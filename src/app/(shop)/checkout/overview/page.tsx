@@ -14,7 +14,6 @@ import { database } from '@/config/firebase';
 import { useCart, useUser, usePaymentMethods, useShippingMethods } from '@/hooks';
 import Address from '@/components/address';
 import Button from '@/components/button';
-import Card from '@/components/card';
 import CartItem from '@/components/cart-item';
 import CheckoutSummary from '@/components/checkout-summary';
 import PageTitle from '@/components/page-title';

@@ -6,7 +6,6 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import { useCart } from '@/hooks';
 import Button from '@/components/button';
-import Card from '@/components/card';
 import CartItem from '@/components/cart-item';
 import CheckoutSummary from '@/components/checkout-summary';
 import PageTitle from '@/components/page-title';
