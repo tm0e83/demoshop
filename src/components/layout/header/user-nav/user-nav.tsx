@@ -37,14 +37,16 @@ export default function UserNav({
           </span>
         )}
       </Link>
-      <Button
-        title="Menu"
-        variant="text"
-        className={styles.openMenuButton}
-        onClick={() => setMainMenuOpen(!mainMenuOpen)}
-      >
-        <Menu />
-      </Button>      
+      {!isDesktop && (
+        <Button
+          title="Menu"
+          variant="text"
+          className={styles.openMenuButton}
+          onClick={() => setMainMenuOpen(!mainMenuOpen)}
+        >
+          <Menu />
+        </Button>      
+      )}
     </nav>
   );
 }

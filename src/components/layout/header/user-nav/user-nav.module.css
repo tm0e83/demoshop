@@ -12,12 +12,4 @@
     right: -5px;
     bottom: -5px;
   }  
-
-  .openMenuButton {
-    display: block;
-
-    @media (min-width: 1100px) {
-      display: none;
-    }
-  }
 }
