@@ -1,7 +1,12 @@
 .order {
   .actions {
     gap: 0.5rem;
-    max-width: 150px;
     justify-content: flex-end;
   } 
+  
+  @container itemGrid (width > 800px) {
+    .actions {
+      max-width: 150px;
+    }
+  }
 }

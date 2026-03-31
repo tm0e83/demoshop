@@ -3,11 +3,15 @@
     margin-bottom: 2rem;
   }
 
-  .status {
-    max-width: 100px;
-  } 
+  @media (min-width: 1024px) {
+    .status {
+      max-width: 100px;
+    }
+  }
 
-  .actions {
-    max-width: 100px;
+  @media (min-width: 1024px) {
+    .actions {
+      max-width: 150px;
+    }
   } 
 }

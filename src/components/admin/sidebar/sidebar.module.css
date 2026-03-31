@@ -4,7 +4,6 @@
   max-height: 100vh;
   background-color: #fff;
   padding: 1rem 1.5rem;
-  /* box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); */
   flex-direction: column;
   justify-content: space-between;
   gap: 2.5rem;
@@ -41,8 +40,8 @@
   
   @media (min-width: 1024px) {
     position: sticky;
-    width: 270px;
-    margin-left: -270px;
+    width: 300px;
+    margin-left: -300px;
     
     &.expanded {
       transform: translateX(0);

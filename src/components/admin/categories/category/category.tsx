@@ -1,11 +1,9 @@
 'use client';
 
 import styles from './category.module.css';
-
 import type { CategoryType } from '@/typings';
-
-import Link from 'next/link';
 import Button from '@/components/button';
+import { Pencil, Trash } from 'lucide-react';
 
 type CategoryProps = {
   category: CategoryType;
@@ -31,15 +29,22 @@ export default function Category({ category, onDelete }: CategoryProps) {
           <div className="item-value">{category.description}</div>
         </div>
         <div className={`item-column ${styles.actions}`}>
-          <Link href={`/admin/categories/edit/${category.id}`}>
-            <Button size="small">Edit</Button>
-          </Link>
-          <Button 
-            color="danger"
+          <Button
             size="small"
+            title="Edit"
+            href={`/admin/categories/edit/${category.id}`}
+          >
+            <Pencil size={16} />
+          </Button>
+          <Button 
+            size="small"
+            color="danger"
             onClick={() => onDelete(category)}
-          >Delete</Button>
-        </div>
+            title="Delete"
+          >
+            <Trash size={16} />
+          </Button>          
+        </div>        
       </div>
     </>
   );

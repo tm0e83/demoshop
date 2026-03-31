@@ -11,11 +11,11 @@ export default function Topbar() {
   return (
     <div className={styles.topbar}>
       <Button
-        Icon={isExpanded ? X : Menu}
-        size="small"
-        variant="hollow"
+        variant="text"
         onClick={toggleSidebar}
-      />
+      >
+        {isExpanded ? <X /> : <Menu />}
+      </Button>
     </div>
   );
 };

@@ -7,16 +7,18 @@
     color: var(--color-danger);
   }
 
-  .status {
-    max-width: 100px;
-  }
-
   .actions {
     gap: 0.5rem;
     justify-content: flex-end;
+  } 
 
-    @media (min-width: 1024px) {
-      max-width: 150px;
+  @container itemGrid (width > 800px) {
+    .status {
+      max-width: 100px;
     }
+
+    .actions {
+      max-width: 150px;
+    }    
   }  
 }

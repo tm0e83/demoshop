@@ -1,6 +1,4 @@
 .header {
-  background-color: var(--color-gray-100);
-
   &>div {
     padding: 1rem;
     text-align: center;
@@ -9,27 +7,7 @@
     align-items: center;
   }
 
-  nav {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  .categoryNav {
-    gap: 2rem;
-  }
-
   a {
     color: var(--body-font-color);
-  }
-
-  .cartLink {
-    position: relative;
-  }
-
-  .cartCount {
-    position: absolute;
-    right: -5px;
-    bottom: -5px;
   }
 }

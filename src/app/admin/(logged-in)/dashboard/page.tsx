@@ -16,7 +16,7 @@ export default function DashboardPage() {
   return (
     <div className={styles.dashboard}>
       <PageTitle>Dashboard</PageTitle>
-      <div className="statistics d-flex gap-4">
+      <div className={styles.statistics}>
         <Card className={`flex-1 ${styles.red}`} href="/admin/categories"> 
           <Title level={3} className="text-center">Categories</Title>
           <p className="text-center">{categories.length}</p>
