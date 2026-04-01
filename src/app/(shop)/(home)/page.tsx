@@ -44,7 +44,7 @@ export default function Home() {
 
       <div className="container">
         <section className="category-section">
-          <PageTitle center={true}>Kategorien</PageTitle>
+          <PageTitle center={true}>Categories</PageTitle>
           <div className={styles.categoriesGrid}>
             {categories.slice(0, 6).map((category) => (
               <Category key={category.id} category={category} />
