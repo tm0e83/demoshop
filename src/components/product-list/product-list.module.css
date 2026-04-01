@@ -1,6 +1,6 @@
 .productList {
   display: grid;
-  gap: 1rem;
+  gap: 2.5rem;
   flex: 1;
 
   @media (min-width: 600px) {

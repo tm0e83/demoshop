@@ -1,22 +1,90 @@
 import './globals.css';
 
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+// import { Geist, Geist_Mono } from 'next/font/google';
+import localFont from 'next/font/local'
 import { ToastContainer } from 'react-toastify';
 import ScrollToTop from '@/components/scroll-to-top';
 import Modal from '@/components/modal';
 import StoreProvider from '@/providers'
 import ClientLayout from './client-layout'
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const monaSans = localFont({
+  src: [
+    {
+      path: '../assets/fonts/mona-sans-v4-latin-200.woff2',
+      weight: '200',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/mona-sans-v4-latin-200italic.woff2',
+      weight: '200',
+      style: 'italic',
+    },
+    {
+      path: '../assets/fonts/mona-sans-v4-latin-300.woff2',
+      weight: '300',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/mona-sans-v4-latin-300italic.woff2',
+      weight: '300',
+      style: 'italic',
+    },
+    {
+      path: '../assets/fonts/mona-sans-v4-latin-500.woff2',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/mona-sans-v4-latin-500italic.woff2',
+      weight: '500',
+      style: 'italic',
+    },
+    {
+      path: '../assets/fonts/mona-sans-v4-latin-600.woff2',
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/mona-sans-v4-latin-600italic.woff2',
+      weight: '600',
+      style: 'italic',
+    },
+    {
+      path: '../assets/fonts/mona-sans-v4-latin-700.woff2',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/mona-sans-v4-latin-700italic.woff2',
+      weight: '700',
+      style: 'italic',
+    },
+    {
+      path: '../assets/fonts/mona-sans-v4-latin-800.woff2',
+      weight: '800',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/mona-sans-v4-latin-800italic.woff2',
+      weight: '800',
+      style: 'italic',
+    },
+    {
+      path: '../assets/fonts/mona-sans-v4-latin-900.woff2',
+      weight: '900',
+      style: 'normal',
+    },
+    {
+      path: '../assets/fonts/mona-sans-v4-latin-900italic.woff2',
+      weight: '900',
+      style: 'italic',
+    },
+  ],
+  variable: '--font-mona-sans',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: "DemoShop",
@@ -30,7 +98,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${monaSans.variable} antialiased`}>
         <ScrollToTop />
 
         <ToastContainer

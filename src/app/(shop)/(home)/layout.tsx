@@ -1,18 +1,16 @@
-import '../globals.css';
 import styles from './layout.module.css';
-
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 
-export default function RootLayout({
+export default function HomeLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <div className={styles.layout}>
+    <div className={styles.homeLayout}>
       <Header />
-      <main className="container">
+      <main>
         {children}
       </main>
       <Footer />
