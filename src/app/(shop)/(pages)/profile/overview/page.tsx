@@ -11,7 +11,7 @@ export default function ProfileOverviewPage() {
   return (
     <>
       <div className="profile-overview-page">
-        <Card>
+        <div>
           <div>
             <strong>Account ID:</strong><br />
             {user?.uid}
@@ -33,7 +33,7 @@ export default function ProfileOverviewPage() {
           </div>
           <br></br>
           <Button onClick={logout}>Logout</Button>
-        </Card>
+        </div>
       </div>
     </>
   );

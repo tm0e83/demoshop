@@ -15,7 +15,7 @@ export default function AddressPage() {
   return (
     <>
       <div className={styles.addressPage}>
-        <Card>
+        <div>
           <div className={styles.addresses}>
             {shippingAddress && (
               <div className="shipping">
@@ -31,7 +31,7 @@ export default function AddressPage() {
             </div>
             )}
           </div>
-        </Card>
+        </div>
       </div>
     </>
   );

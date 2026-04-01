@@ -8,7 +8,7 @@ type ImagePlaceholder = {
   round?: boolean;
 }
 
-export default function ImagePlaceholder({ width = 300, height = 225, label = 'No image', round = false }: ImagePlaceholder) {
+export default function ImagePlaceholder({ width = 300, height = 300, label = 'No image', round = false }: ImagePlaceholder) {
   return (
     <Image
     

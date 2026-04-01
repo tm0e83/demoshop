@@ -1,5 +1,6 @@
 'use client';
 
+import styles from './page.module.css';
 import type { CartItemType, DiscountType } from '@/typings';
 import { usePathname, useRouter, useParams } from 'next/navigation';
 import { useOrder, usePaymentMethods, useShippingMethods } from '@/hooks';
@@ -7,9 +8,9 @@ import { formatCurrency, formatDate } from '@/utils';
 
 import Address from '@/components/address';
 import Button from '@/components/button';
-import Card from '@/components/card';
 import CartItem from '@/components/cart-item';
 import PageTitle from '@/components/page-title';
+import { ArrowLeft } from 'lucide-react';
 
 export default function OrderDetailsPage() {
   const { orderId } = useParams<{ orderId: string }>()
@@ -31,7 +32,7 @@ export default function OrderDetailsPage() {
   return (
     <div className="order-details-page">
       {pathname.startsWith('/admin') && <PageTitle>Order details</PageTitle>}
-      <Card>
+      <div>
         <div className="mb-4">
           <strong>Order ID:</strong><br />
           {order.id}
@@ -66,11 +67,13 @@ export default function OrderDetailsPage() {
         </div>
         <div className="mb-4">
           <strong>Products:</strong><br />
-          {order.items.map((item: CartItemType) => <CartItem key={item.id} cartItem={item} />)}</div>
-      </Card>
+          <div className={styles.productsList}>
+            {order.items.map((item: CartItemType) => <CartItem key={item.id} cartItem={item} />)}</div>
+          </div>
+      </div>
 
       <div className="d-flex justify-between mt-4">
-        <Button color="secondary" onClick={() => router.back()}>Back</Button>
+        <Button color="secondary" onClick={() => router.back()} Icon={ArrowLeft}>Back</Button>
       </div>
     </div>
   );
