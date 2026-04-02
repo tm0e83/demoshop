@@ -87,8 +87,13 @@ const monaSans = localFont({
 })
 
 export const metadata: Metadata = {
-  title: "DemoShop",
-  description: "NextJS demo shop based on nextjs and firebase",
+  title: 'DemoShop',
+  description: 'NextJS demo shop based on nextjs and firebase',
+  robots: {
+    index: false,
+    follow: false,
+    nocache: true,
+  },  
 };
 
 export default function RootLayout({
