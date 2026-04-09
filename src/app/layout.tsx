@@ -123,7 +123,7 @@ export default function RootLayout({
             {children}
             <Modal />
           </ClientLayout>
-        </StoreProvider>
+        </StoreProvider>     
       </body>
     </html>
   );

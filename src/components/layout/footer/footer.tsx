@@ -26,9 +26,8 @@ export default function Footer() {
             <div className="footer-column">
               <div className={styles.footerColumnTitle}>Info</div>
               <ul className={styles.footerColumnList}>
-                <li><Link href="/about">About Us</Link></li>
-                <li><Link href="/contact">Contact</Link></li>
                 <li><Link href="/privacy">Privacy Policy</Link></li>
+                <li><Link href="/imprint">Imprint</Link></li>
               </ul>
             </div>
           </div>
