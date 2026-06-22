@@ -1,7 +1,6 @@
 'use client';
 
 import Button from '@/components/button';
-import Card from '@/components/card/card';
 import { useLogout, useUser } from '@/hooks';
 
 export default function ProfileOverviewPage() {
@@ -14,7 +13,7 @@ export default function ProfileOverviewPage() {
         <div>
           <div>
             <strong>Account ID:</strong><br />
-            {user?.uid}
+            {user?.id}
           </div>
           <br />
           <div>

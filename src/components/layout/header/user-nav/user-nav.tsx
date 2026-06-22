@@ -9,13 +9,11 @@ import Button from '@/components/button';
 type UserNavProps = {
   mainMenuOpen: boolean;
   setMainMenuOpen: (open: boolean) => void;
-  isDesktop: boolean;
 };
-  
+
 export default function UserNav({
   mainMenuOpen,
   setMainMenuOpen,
-  isDesktop
 }: UserNavProps) {
   const { user } = useUser();
   const cart = useCart();
@@ -24,7 +22,7 @@ export default function UserNav({
   return (
     <nav className={styles.userNav}>
       {user?.role === 'admin' && <Link href={'/admin'} title="Administration"><Settings /></Link>}
-      {user?.uid ? (
+      {user?.id ? (
         <Link href={'/profile'} title="Profile"><User /></Link>
       ) : (
         <Link href={'/login'} title="Login"><LogIn /></Link>
@@ -37,16 +35,14 @@ export default function UserNav({
           </span>
         )}
       </Link>
-      {!isDesktop && (
-        <Button
-          title="Menu"
-          variant="text"
-          className={styles.openMenuButton}
-          onClick={() => setMainMenuOpen(!mainMenuOpen)}
-        >
-          <Menu />
-        </Button>      
-      )}
+      <Button
+        title="Menu"
+        variant="text"
+        className={styles.openMenuButton}
+        onClick={() => setMainMenuOpen(!mainMenuOpen)}
+      >
+        <Menu />
+      </Button>
     </nav>
   );
 }

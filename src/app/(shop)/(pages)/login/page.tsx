@@ -8,6 +8,7 @@ import { signInWithEmailAndPassword } from 'firebase/auth';
 import { useForm } from "react-hook-form"
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import { useDispatch } from 'react-redux';
 import { getUser } from '@/services/firebase.service';
 import { auth } from '@/config/firebase';
 import Button from '@/components/button';
@@ -24,12 +25,13 @@ type Inputs = {
 
 export default function Login() {
   const router = useRouter();
+  const dispatch = useDispatch();
   const { user } = useUser();
   const { register, handleSubmit, formState: { errors } } = useForm<Inputs>({
     mode: 'onChange',
   })
 
-  if (user?.uid) {
+  if (user?.id) {
     router.push('/profile');
   }
   
@@ -37,7 +39,7 @@ export default function Login() {
     signInWithEmailAndPassword(auth, data.email, data.password)
     .then((userCredential) => getUser(userCredential.user.uid))
     .then((userData) => {
-        userStore.setUser(userData);
+        dispatch(userStore.setUser(userData));
         router.push('/profile');
       })
       .catch((error) => {

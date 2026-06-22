@@ -6,6 +6,7 @@ import { formatCurrency } from '@/utils';
 import { useCart, useShippingMethods } from '@/hooks';
 import VoucherCodeInput from '@/components/voucher-code-input';
 import LoadingScreen from '@/components/loading-screen';
+import { useEffect } from 'react';
 
 type CheckoutSummaryProps = {
   showVoucherInput?: boolean;
@@ -16,12 +17,14 @@ export default function CheckoutSummary({ showVoucherInput = false }: CheckoutSu
   const cart = useCart();
   const shippingMethods = useShippingMethods();
 
+  useEffect(() => {
+    if (cart.status !== 'loading' && cart.items.length === 0) {
+      router.push('/cart');
+    }
+  }, [cart.status, cart.items.length, router]);
+
   if (cart.status === 'loading') {
     return <LoadingScreen />;
-  }
-
-  if (cart.items.length === 0) {
-    router.push('/cart');
   }
 
   const selectedShippingMethod = shippingMethods.find((method) => method.id === cart.shippingMethodId) ?? shippingMethods[0];

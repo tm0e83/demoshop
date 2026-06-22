@@ -1,44 +1,33 @@
-'use client';
+'use cache';
 
+import { cacheLife } from 'next/cache';
 import styles from './page.module.css';
-import Image from 'next/image';
-import { useCategories, useProducts } from '@/hooks';
 import PageTitle from '@/components/page-title';
 import ProductCard from '@/components/product-card';
 import ProductList from '@/components/product-list';
 import Title from '@/components/title'
 import Category from '@/components/category';
-import Button from '@/components/button';
-import { ArrowRight } from 'lucide-react';
+import { getLatestProducts, getCategories } from '@/services/firebase-admin.service';
+import AdminInfo from './admin-info';
 
-export default function Home() {
-  const { products } = useProducts();
-  const { categories } = useCategories();
+export default async function Home() {
+  cacheLife('hours');
+
+  const products = await getLatestProducts(6);
+  const categories = await getCategories();
 
   return (
-    <div className={styles.startPage}>     
+    <div className={styles.startPage}>
 
       <section className={styles.heroSection}>
         <div className="flex-1 container">
           <div className={styles.introText}>
-              <Title>A NextJS demo shop with Firebase</Title>
-              <p>This is a demo shop for testing purposes only. 
-              No real orders can be placed and no goods will be delivered.</p>
+            <Title>A NextJS demo shop with Firebase</Title>
+            <p>This is a demo shop for testing purposes only.
+            No real orders can be placed and no goods will be delivered.</p>
           </div>
           <div className={styles.modelImage}></div>
-          <div className={styles.adminInfo}>
-            <Title level={3}>Admin credentials for testing</Title>
-            <p>
-              User: test@demoshop.com<br />
-              Password: demo2026
-            </p>
-            <Button
-              href="/login"
-              className="mt-4"
-              Icon={ArrowRight}
-              iconAlign="right"
-            >Login</Button>
-          </div>
+          <AdminInfo />
         </div>
       </section>
 
@@ -61,6 +50,7 @@ export default function Home() {
           </ProductList>
         </section>
       </div>
+
     </div>
   );
 }

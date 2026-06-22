@@ -42,7 +42,7 @@ export default function ProductDetailPage() {
         <p className="product-description">{product?.description}</p>
         <div className={`${styles.productPrice} mb-4`}>{formatCurrency(product?.price)}</div>
 
-        {user?.uid ? (
+        {user?.id ? (
           <Button onClick={handleAddToCart} Icon={ShoppingCart}>
             Add to cart
         </Button>

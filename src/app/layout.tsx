@@ -2,6 +2,7 @@ import './globals.css';
 
 import type { Metadata } from 'next';
 // import { Geist, Geist_Mono } from 'next/font/google';
+import { Suspense } from 'react';
 import localFont from 'next/font/local'
 import { ToastContainer } from 'react-toastify';
 import ScrollToTop from '@/components/scroll-to-top';
@@ -93,7 +94,7 @@ export const metadata: Metadata = {
     index: false,
     follow: false,
     nocache: true,
-  },  
+  },
 };
 
 export default function RootLayout({
@@ -104,7 +105,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${monaSans.variable} antialiased`}>
-        <ScrollToTop />
+        <Suspense>
+          <ScrollToTop />
+        </Suspense>
 
         <ToastContainer
           position="bottom-right"
@@ -118,12 +121,14 @@ export default function RootLayout({
           pauseOnHover={false}
         />
 
-        <StoreProvider>
-          <ClientLayout>
-            {children}
-            <Modal />
-          </ClientLayout>
-        </StoreProvider>     
+        <Suspense>
+          <StoreProvider>
+            <ClientLayout>
+              {children}
+              <Modal />
+            </ClientLayout>
+          </StoreProvider>
+        </Suspense>
       </body>
     </html>
   );

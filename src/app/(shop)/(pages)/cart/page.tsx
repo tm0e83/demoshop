@@ -21,7 +21,7 @@ export default function CartPage() {
 
       <div className={styles.cartContent}>
         <div className={styles.cartItemList}>
-          {user?.uid ? (
+          {user?.id ? (
             cart.items.length === 0 ? (
               <div>Your cart is empty</div>
             ) : (
@@ -46,7 +46,7 @@ export default function CartPage() {
           )}
         </div>
 
-        {cart.items.length > 0 && user?.uid && (
+        {cart.items.length > 0 && user?.id && (
           <CheckoutSummary showVoucherInput={true} />
         )}
       </div>
@@ -58,7 +58,7 @@ export default function CartPage() {
           </Button>
         </Link>
 
-        {cart.items.length > 0 && user?.uid && (
+        {cart.items.length > 0 && user?.id && (
           <Link href="/checkout/address">
             <Button className="w-full" Icon={ArrowRight} iconAlign="right">
               Proceed to Checkout

@@ -1,0 +1,8 @@
+.adminInfo {
+  background-color: #fff;
+  padding: 2rem;
+  border-top: color-mix(in srgb, var(--color-mint), #000 30%) solid 5px;
+  box-shadow: 0 3px 8px 0 oklch(0 0.1 0.5 / 0.1);
+  font-size: 0.85em;
+  margin-bottom: 2.5rem;
+}

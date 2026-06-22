@@ -21,7 +21,7 @@ export default function Sidebar({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     setIsExpanded(false);
-  }, [pathname]);
+  }, [pathname, setIsExpanded]);
 
   return (
     <aside className={clsx(styles.sidebar, isExpanded && styles.expanded, isMinimized && styles.minimized)}>

@@ -5,10 +5,12 @@ import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth, database } from '@/config/firebase';
 import { useForm } from "react-hook-form";
 import { useRouter } from 'next/navigation';
+import { useDispatch } from 'react-redux';
 import { useUser } from '@/hooks';
 import { createUser } from '@/services/firebase.service';
 import { userStore } from '@/store';
-import { push, ref, serverTimestamp } from 'firebase/database';
+import { push, ref } from 'firebase/database';
+import { serverTimestamp } from 'firebase/firestore';
 import Button from '@/components/button';
 import Card from '@/components/card/card';
 import Input from '@/components/input';
@@ -29,10 +31,11 @@ type Inputs = {
 
 export default function SignUpPage() {
   const router = useRouter();
+  const dispatch = useDispatch();
   const { user } = useUser();
   const { register, handleSubmit, formState: { errors } } = useForm<Inputs>()
 
-  if (user?.uid) {
+  if (user?.id) {
     return router.push('/profile');
   }
 
@@ -60,13 +63,13 @@ export default function SignUpPage() {
         firstname: data.firstname,
         lastname: data.lastname,
         role: 'customer',
-        uid: userCredential.user.uid,
+        id: userCredential.user.uid,
       }))
       .then((userData) => {
         if (!userData) {
           throw new Error('User data not found after creation');
         }
-        userStore.setUser(userData);
+        dispatch(userStore.setUser(userData));
         router.push('/profile');
       })
       .catch((error) => {

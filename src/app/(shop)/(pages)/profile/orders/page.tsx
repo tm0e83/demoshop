@@ -8,7 +8,7 @@ import { useUser, useUserOrders } from '@/hooks';
 
 export default function OrdersPage() {
   const { user } = useUser();
-  const { orders } = useUserOrders(user?.uid);
+  const { orders } = useUserOrders(user?.id);
 
   return (
     <>

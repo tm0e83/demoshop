@@ -1,6 +1,7 @@
 'use client';
 
 import type { SubmitHandler } from 'react-hook-form';
+import type { CategoryType } from '@/typings';
 
 import { useForm } from "react-hook-form"
 import Link from 'next/link';
@@ -35,12 +36,11 @@ export default function CreateCategoryPage() {
   const onSubmitForm: SubmitHandler<Inputs> = async (data) => {
     const newCategory = await addNewCategory({
       active: true,
-      createdAt: 0,
       description: data.description,
       id: '',
       image: '',
       title: data.title,
-    });
+    } as CategoryType);
     
     if (newCategory) {
       dispatch(categoryStore.addCategory(newCategory));

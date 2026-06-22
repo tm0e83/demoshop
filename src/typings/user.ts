@@ -1,4 +1,4 @@
-import { serverTimestamp } from "firebase/database";
+import { serverTimestamp } from "firebase/firestore";
 
 export type UserRoles = 'admin' | 'customer';
 
@@ -15,7 +15,7 @@ export type AddressType = {
 export type UserType = {
   birthdate: string;
   createdAt: ReturnType<typeof serverTimestamp>;
-  uid: string;
+  id: string;
   email: string;
   firstname: string;
   lastname: string;

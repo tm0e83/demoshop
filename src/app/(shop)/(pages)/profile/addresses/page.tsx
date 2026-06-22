@@ -3,7 +3,6 @@
 import styles from './page.module.css';
 import { useUser } from '@/hooks';
 import Address from '@/components/address';
-import Card from '@/components/card/card';
 import Title from '@/components/title';
 
 export default function AddressPage() {

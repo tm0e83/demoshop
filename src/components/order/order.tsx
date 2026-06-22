@@ -35,7 +35,7 @@ export default function Order({ order, showCustomer = false }: OrderProps) {
     <div className={`${styles.order} item`}>
       <div className="item-column">
         <div className="item-label">Date</div>
-        <div className="item-value">{formatDate(order.createdAt as number)}</div>
+        <div className="item-value">{formatDate(order.createdAt)}</div>
       </div>
       <div className="item-column">
         <div className="item-label">Status</div>

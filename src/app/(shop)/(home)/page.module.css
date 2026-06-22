@@ -11,7 +11,7 @@
       color-mix(in srgb, var(--color-mint), #fff 30%),
       var(--color-mint) 100%
     );
-      
+
     @media (min-width: 1200px) {
       min-height: 47vh;
     }
@@ -19,14 +19,14 @@
     @media (min-width: 1400px) {
       min-height: 55vh;
     }
-      
+
     h1 {
       font-size: 3.5em;
       margin-bottom: 0.5em;
-      text-align: center;     
+      text-align: center;
 
       @media (min-width: 1200px) {
-        text-align: left;     
+        text-align: left;
       }
     }
 
@@ -37,9 +37,9 @@
     &>div {
       display: flex;
       flex-direction: column;
-      align-items: center;      
-      
-      @media (min-width: 1200px) { 
+      align-items: center;
+
+      @media (min-width: 1200px) {
         gap: 2.5rem;
         flex-direction: row;
         align-items: flex-end;
@@ -50,10 +50,10 @@
       flex: 1;
       margin-bottom: 2.5rem;
       text-align: center;
-      
+
       @media (min-width: 1200px) {
         text-align: left;
-      }      
+      }
     }
 
     .modelImage {
@@ -67,24 +67,15 @@
         -webkit-mask-image: url('@/public/images/model.svg');
         mask-image: url('@/public/images/model.svg');
         mask-size: contain;
-        mask-repeat: no-repeat;   
+        mask-repeat: no-repeat;
         mask-position: bottom center;
         align-self: stretch;
-  
+
         img {
           max-width: 100%;
           height: auto;
         }
       }
-    }
-
-    .adminInfo {
-      background-color: #fff;
-      padding: 2rem;
-      border-top: color-mix(in srgb, var(--color-mint), #000 30%) solid 5px;
-      box-shadow: 0 3px 8px 0 oklch(0 0.1 0.5 / 0.1);
-      font-size: 0.85em;
-      margin-bottom: 2.5rem;
     }
   }
 

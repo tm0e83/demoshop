@@ -1,6 +1,7 @@
 'use client';
 
 import type { SubmitHandler } from 'react-hook-form';
+import type { ProductType } from '@/typings';
 
 import { Controller, useForm } from "react-hook-form"
 import { useRouter } from 'next/navigation';
@@ -41,15 +42,11 @@ export default function CreateProductPage() {
       title: data.title,
       description: data.description,
       active: true,
-      categoryIds: data.categories.reduce((acc, categoryId) => {
-        acc[categoryId] = true;
-        return acc;
-      }, {} as Record<string, boolean>),
-      createdAt: 0,
+      categoryIds: data.categories,
       id: '',
       image: '',
       price: Number(data.price),
-    });
+    } as ProductType);
     
     if (newProduct) {
       dispatch(productStore.addProduct(newProduct));

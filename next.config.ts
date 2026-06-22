@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  cacheComponents: true,
   async redirects() {
     return [
       {
@@ -14,9 +15,9 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
     ];
-  },  
+  },
   images: {
-    dangerouslyAllowSVG: true,       
+    dangerouslyAllowSVG: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -25,7 +26,7 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
     ],
-  },  
+  },
 };
 
 export default nextConfig;

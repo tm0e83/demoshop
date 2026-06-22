@@ -13,7 +13,7 @@ export default function User({ user }: { user: UserType }) {
       </div>
       <div className="item-column">
         <div className="item-label">ID:</div>
-        <div className="item-value">{user.uid}</div>
+        <div className="item-value">{user.id}</div>
       </div>
     </div>
   );

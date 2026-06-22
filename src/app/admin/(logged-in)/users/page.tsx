@@ -29,7 +29,7 @@ export default function UserOverviewPage() {
                 </div>
               </div>
               <div className="item-grid-body">
-                {users.map(user => <User key={user.uid} user={user} />)}
+                {users.map(user => <User key={user.id} user={user} />)}
               </div>
             </div>
           </>

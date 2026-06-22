@@ -1,6 +1,6 @@
 export type ProductType  = {
   active: boolean;
-  categoryIds: Record<string, boolean>;
+  categoryIds: string[];
   createdAt: number;
   description: string;
   id: string;

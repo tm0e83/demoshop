@@ -43,7 +43,7 @@ export default function OrderDetailsPage() {
         </div>
         <div className="mb-4">
           <strong>Order date:</strong><br />
-          {formatDate(order.createdAt as number)}
+          {formatDate(order.createdAt)}
         </div>
         <div className="mb-4">
           <strong>Payment method:</strong><br />

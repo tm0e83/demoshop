@@ -11,5 +11,11 @@
     position: absolute;
     right: -5px;
     bottom: -5px;
-  }  
+  }
+
+  .openMenuButton {
+    @media (min-width: 1100px) {
+      display: none;
+    }
+  }
 }

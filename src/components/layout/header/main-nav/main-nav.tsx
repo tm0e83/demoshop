@@ -8,22 +8,18 @@ import Button from '@/components/button';
 type MainNavProps = {
   mainMenuOpen: boolean;
   setMainMenuOpen: (open: boolean) => void;
-  isDesktop: boolean;
 };
 
-export default function MainNav({ 
+export default function MainNav({
   mainMenuOpen,
   setMainMenuOpen,
-  isDesktop 
 }: MainNavProps) {
   const { categories } = useCategories();
 
   return (
     <nav className={
       clsx(styles.mainNav, {
-        [styles.open]: mainMenuOpen && !isDesktop,
-        [styles.mobile]: !isDesktop,
-        [styles.desktop]: isDesktop,
+        [styles.open]: mainMenuOpen,
       })}>
       {categories &&
         categories.map(category => (

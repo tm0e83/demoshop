@@ -3,7 +3,7 @@
 import styles from './page.module.css';
 
 import type { CartItemType, OrderType } from '@/typings';
-import { push, ref, serverTimestamp } from 'firebase/database';
+import { push, ref } from 'firebase/database';
 import { useDispatch } from 'react-redux';
 import { saveOrder } from '@/services/firebase.service';
 import { ArrowLeft, Check } from 'lucide-react';
@@ -40,10 +40,10 @@ export default function CheckoutOrderOverviewPage() {
       shippingAddress: cart.shippingAddress,
       discounts: cart.discounts,
       orderPlaced: cart.orderPlaced,
-      createdAt: serverTimestamp(),
+      createdAt: Date.now(),
       id: orderId,
       status: cart.paymentMethodId === 'paypal' ? 'paid' : 'pending',
-      uid: user?.uid ?? ''
+      uid: user?.id ?? ''
     } as OrderType);
 
     router.push('/checkout/thank-you');

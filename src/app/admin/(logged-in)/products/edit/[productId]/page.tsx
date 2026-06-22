@@ -45,7 +45,7 @@ export default function EditProductPage() {
       title: product?.title || '',
       description: product?.description || '',
       price: product?.price || 0,
-      categories: Object.keys(product?.categoryIds || {}),
+      categories: product?.categoryIds || [],
     });
   }, [product, reset]);
 
@@ -54,10 +54,7 @@ export default function EditProductPage() {
       title: data.title,
       description: data.description,
       active: true,
-      categoryIds: data.categories.reduce((acc, categoryId) => {
-        acc[categoryId] = true;
-        return acc;
-      }, {} as Record<string, boolean>),
+      categoryIds: data.categories,
       image: '',
       price: Number(data.price),
     });
