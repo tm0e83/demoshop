@@ -22,9 +22,6 @@ const toTimestamp = (value: unknown): unknown => {
     value;
 };
 
-// Converts a single RTDB-shaped seed document into the shape the app's
-// Firestore service layer expects (Timestamps instead of ms numbers,
-// `categoryIds` as an array instead of an RTDB-style boolean map).
 const normalizeDoc = (
   collectionName: CollectionName,
   data: SeedDoc
