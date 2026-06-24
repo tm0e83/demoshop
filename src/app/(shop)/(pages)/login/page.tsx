@@ -34,24 +34,24 @@ export default function Login() {
   if (user?.id) {
     router.push('/profile');
   }
-  
+
   const onSubmitForm: SubmitHandler<Inputs> = (data) => {
     signInWithEmailAndPassword(auth, data.email, data.password)
-    .then((userCredential) => getUser(userCredential.user.uid))
-    .then((userData) => {
-        dispatch(userStore.setUser(userData));
-        router.push('/profile');
-      })
-      .catch((error) => {
-        console.error(error.message);
-      });
+      .then((userCredential) => getUser(userCredential.user.uid))
+      .then((userData) => {
+          dispatch(userStore.setUser(userData));
+          router.push('/profile');
+        })
+        .catch((error) => {
+          console.error(error.message);
+        });
   };
 
   return (
     <div className={styles.login}>
       <h1>Login</h1>
       <div className="d-flex gap-4 flex-wrap">
-        <Card className="flex-1">        
+        <Card className="flex-1">
           <form onSubmit={handleSubmit(onSubmitForm)}>
             <Input
               id="email"
