@@ -1,0 +1,13 @@
+- generic [active] [ref=f1e1]:
+  - region "Notifications Alt+T"
+  - generic [ref=f1e2]:
+    - heading "Administration" [level=1] [ref=f1e4]
+    - generic [ref=f1e6]:
+      - generic [ref=f1e7]:
+        - generic [ref=f1e8]: Email
+        - textbox "Email" [ref=f1e9]
+      - generic [ref=f1e10]:
+        - generic [ref=f1e11]: Password
+        - textbox "Password" [ref=f1e12]
+      - button "Login" [ref=f1e14] [cursor=pointer]
+  - button "Open Next.js Dev Tools" [ref=f1e21] [cursor=pointer]

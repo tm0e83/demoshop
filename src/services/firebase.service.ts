@@ -62,7 +62,7 @@ export const createUser = async (user: UserType): Promise<UserType | null> => {
 export const getUsers = async (): Promise<UserType[]> => {
   try {
     const snapshot = await getDocs(collection(db, 'users'));
-    return snapshot.docs.map((doc) => normalizeUser(doc.data()) as UserType);
+    return snapshot.docs.map((doc) => ({ ...normalizeUser(doc.data()), id: doc.id }) as UserType);
   } catch (error) {
     console.error('Error getting users:', error);
     throw error;
@@ -77,7 +77,7 @@ export const getCustomers = async (): Promise<UserType[]> => {
 export const getUser = async (userId: string): Promise<UserType | null> => {
   try {
     const snapshot = await getDoc(doc(db, 'users', userId));
-    return snapshot.exists() ? (normalizeUser(snapshot.data()) as UserType) : null;
+    return snapshot.exists() ? ({ ...normalizeUser(snapshot.data()), id: snapshot.id }) as UserType : null;
   } catch (error) {
     console.error('Error getting user:', error);
     throw error;

@@ -1,0 +1,60 @@
+- generic [active] [ref=f3e1]:
+  - region "Notifications Alt+T"
+  - generic [ref=f3e138]:
+    - complementary [ref=f3e139]:
+      - link [ref=f3e140] [cursor=pointer]:
+        - /url: /admin/dashboard
+        - strong [ref=f3e141]: DEMO
+        - text: SHOP
+      - list [ref=f3e143]:
+        - listitem [ref=f3e144]:
+          - link "Storefront" [ref=f3e145] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=f3e151]:
+          - link "Dashboard" [ref=f3e152] [cursor=pointer]:
+            - /url: /admin/dashboard
+        - listitem [ref=f3e157]:
+          - link "Categories" [ref=f3e158] [cursor=pointer]:
+            - /url: /admin/categories
+        - listitem [ref=f3e162]:
+          - link "Products" [ref=f3e163] [cursor=pointer]:
+            - /url: /admin/products
+        - listitem [ref=f3e169]:
+          - link "Orders" [ref=f3e170] [cursor=pointer]:
+            - /url: /admin/orders
+        - listitem [ref=f3e178]:
+          - link "Users" [ref=f3e179] [cursor=pointer]:
+            - /url: /admin/users
+        - listitem [ref=f3e186]:
+          - link "API Keys" [ref=f3e187] [cursor=pointer]:
+            - /url: /admin/api-keys
+      - list [ref=f3e195]:
+        - listitem [ref=f3e196]:
+          - generic [ref=f3e197]: test@demoshop.com
+        - listitem [ref=f3e203]:
+          - button "Logout" [ref=f3e204] [cursor=pointer]
+      - button [ref=f3e209] [cursor=pointer]
+    - generic [ref=f3e213]:
+      - button [ref=f3e215] [cursor=pointer]
+      - main [ref=f3e218]:
+        - generic [ref=f3e219]:
+          - heading "Dashboard" [level=1] [ref=f3e220]
+          - generic [ref=f3e221]:
+            - link [ref=f3e222] [cursor=pointer]:
+              - /url: /admin/categories
+              - heading "Categories" [level=3] [ref=f3e223]
+              - paragraph [ref=f3e224]: "6"
+            - link [ref=f3e225] [cursor=pointer]:
+              - /url: /admin/products
+              - heading "Products" [level=3] [ref=f3e226]
+              - paragraph [ref=f3e227]: "9"
+            - link [ref=f3e228] [cursor=pointer]:
+              - /url: /admin/orders
+              - heading "Orders" [level=3] [ref=f3e229]
+              - paragraph [ref=f3e230]: "1"
+            - link [ref=f3e231] [cursor=pointer]:
+              - /url: /admin/customers
+              - heading "Customers" [level=3] [ref=f3e232]
+              - paragraph [ref=f3e233]: "0"
+  - button "Open Next.js Dev Tools" [ref=f3e9] [cursor=pointer]
+  - alert [ref=f3e13]

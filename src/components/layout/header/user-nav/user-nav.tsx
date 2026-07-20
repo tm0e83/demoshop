@@ -17,7 +17,7 @@ export default function UserNav({
 }: UserNavProps) {
   const { user } = useUser();
   const cart = useCart();
-  const mounted = useSyncExternalStore(() => () => {}, () => true, () => false);  
+  const mounted = useSyncExternalStore(() => () => {}, () => true, () => false);
 
   return (
     <nav className={styles.userNav}>

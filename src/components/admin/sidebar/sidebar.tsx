@@ -21,14 +21,14 @@ export default function Sidebar({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     setIsExpanded(false);
-  }, [pathname, setIsExpanded]);
+  }, [pathname, isDesktop, setIsExpanded]);
 
   return (
     <aside className={clsx(styles.sidebar, isExpanded && styles.expanded, isMinimized && styles.minimized)}>
       {children}
-      <Button 
-        variant="hollow" 
-        className={styles.toggleExpand} 
+      <Button
+        variant="hollow"
+        className={styles.toggleExpand}
         onClick={toggleMinimized}
       >
         {isMinimized ? <ChevronRight size={12} /> : <ChevronLeft size={12} />}

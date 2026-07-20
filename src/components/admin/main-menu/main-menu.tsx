@@ -25,6 +25,7 @@ export default function MainMenu() {
     { label: 'Products', href: '/admin/products', icon: <Tags size={16} /> },
     { label: 'Orders', href: '/admin/orders', icon: <ShoppingBasket size={16} /> },
     { label: 'Users', href: '/admin/users', icon: <Users size={16} /> },
+    { label: 'API Keys', href: '/admin/api-keys', icon: <Users size={16} /> },
   ];
 
   return (
@@ -38,7 +39,7 @@ export default function MainMenu() {
             </Link>
           </li>
         ))}
-      </ul> 
+      </ul>
     </div>
   );
 };
