@@ -20,7 +20,9 @@ export default function Sidebar({ children }: { children: React.ReactNode }) {
   }, [isDesktop, setIsExpanded]);
 
   useEffect(() => {
-    setIsExpanded(false);
+    if (!isDesktop) {
+      setIsExpanded(false);
+    }
   }, [pathname, isDesktop, setIsExpanded]);
 
   return (
