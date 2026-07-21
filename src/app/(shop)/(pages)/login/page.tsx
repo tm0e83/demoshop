@@ -4,6 +4,7 @@ import styles from './page.module.css'
 
 import type { SubmitHandler } from 'react-hook-form';
 
+import { useEffect } from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { useForm } from "react-hook-form"
 import Link from 'next/link';
@@ -31,9 +32,11 @@ export default function Login() {
     mode: 'onChange',
   })
 
-  if (user?.id) {
-    router.push('/profile');
-  }
+  useEffect(() => {
+    if (user?.id) {
+      router.push('/profile');
+    }
+  }, [user?.id, router]);
 
   const onSubmitForm: SubmitHandler<Inputs> = (data) => {
     signInWithEmailAndPassword(auth, data.email, data.password)

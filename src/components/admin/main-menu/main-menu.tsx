@@ -5,7 +5,7 @@ import styles from './main-menu.module.css';
 import clsx from 'clsx';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { ExternalLink, House, Grid2x2, Tags, ShoppingBasket, Users } from 'lucide-react';
+import { ExternalLink, House, KeyRound, Grid2x2, Tags, ShoppingBasket, Users } from 'lucide-react';
 import { useAdminSidebar } from '@/providers';
 
 type NavLinkType = {
@@ -25,7 +25,7 @@ export default function MainMenu() {
     { label: 'Products', href: '/admin/products', icon: <Tags size={16} /> },
     { label: 'Orders', href: '/admin/orders', icon: <ShoppingBasket size={16} /> },
     { label: 'Users', href: '/admin/users', icon: <Users size={16} /> },
-    { label: 'API Keys', href: '/admin/api-keys', icon: <Users size={16} /> },
+    { label: 'API Keys', href: '/admin/api-keys', icon: <KeyRound size={16} /> },
   ];
 
   return (
