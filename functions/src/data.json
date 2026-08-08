@@ -195,7 +195,7 @@
         "-OnRcC7U2nrGqKlcE6Tt": true
       },
       "createdAt": 1773237559439,
-      "description": "A lightweight and breathable running jacket designed for athletic activities and outdoor training. Made with flexible, moisture-wicking fabric and a wind-resistant outer layer, it provides comfort, mobility, and protection during workouts in changing weather conditions.",
+      "description": "A lightweight and breathable running jacket designed for athletic activities and outdoor training. Made with flexible, moisture-wicking fabric and a wind-resistant outer layer.",
       "id": "-OnSBT0fC6yVVSJ_-0ws",
       "image": "",
       "price": 79.99,
@@ -219,7 +219,7 @@
         "-OnRcC7U2nrGqKlcE6Tt": true
       },
       "createdAt": 1773307678723,
-      "description": "Lightweight sports shorts designed for workouts, running, and gym sessions. Made from breathable, quick-drying fabric with an elastic waistband to ensure maximum comfort and freedom of movement during athletic activities.",
+      "description": "Lightweight sports shorts designed for workouts, running, and gym sessions. Made from breathable, quick-drying fabric with an elastic waistband to ensure maximum comfort.",
       "id": "-OnWMwzX_AqF__GdpC8-",
       "image": "",
       "price": 29.99,
@@ -236,23 +236,809 @@
       "image": "",
       "price": 99.95,
       "title": "Blue Jeans"
+    },
+    "-OnRc1J001": {
+      "active": true,
+      "categoryIds": {
+        "-OnRc1JUABtKFq9UXGOA": true
+      },
+      "createdAt": 1773400000000,
+      "description": "Classic leather bomber jacket with a timeless style. Perfect for both casual and sophisticated looks.",
+      "id": "-OnRc1J001",
+      "image": "",
+      "price": 89.99,
+      "title": "Classic Leather Bomber"
+    },
+    "-OnRc1J002": {
+      "active": true,
+      "categoryIds": {
+        "-OnRc1JUABtKFq9UXGOA": true
+      },
+      "createdAt": 1773400100000,
+      "description": "Denim jacket with a vintage wash and distressed details. Versatile piece for any wardrobe.",
+      "id": "-OnRc1J002",
+      "image": "",
+      "price": 64.99,
+      "title": "Vintage Denim Jacket"
+    },
+    "-OnRc1J003": {
+      "active": true,
+      "categoryIds": {
+        "-OnRc1JUABtKFq9UXGOA": true
+      },
+      "createdAt": 1773400200000,
+      "description": "Wool blend blazer jacket for professional and formal occasions. Elegant and sophisticated.",
+      "id": "-OnRc1J003",
+      "image": "",
+      "price": 129.99,
+      "title": "Wool Blend Blazer"
+    },
+    "-OnRc1J004": {
+      "active": true,
+      "categoryIds": {
+        "-OnRc1JUABtKFq9UXGOA": true
+      },
+      "createdAt": 1773400300000,
+      "description": "Waterproof rain jacket with sealed seams and reflective strips. Built for wet weather protection.",
+      "id": "-OnRc1J004",
+      "image": "",
+      "price": 74.99,
+      "title": "Waterproof Rain Jacket"
+    },
+    "-OnRc1J005": {
+      "active": true,
+      "categoryIds": {
+        "-OnRc1JUABtKFq9UXGOA": true
+      },
+      "createdAt": 1773400400000,
+      "description": "Quilted puffer jacket with down insulation for maximum warmth and lightweight comfort.",
+      "id": "-OnRc1J005",
+      "image": "",
+      "price": 99.99,
+      "title": "Down Quilted Puffer"
+    },
+    "-OnRc1J006": {
+      "active": true,
+      "categoryIds": {
+        "-OnRc1JUABtKFq9UXGOA": true
+      },
+      "createdAt": 1773400500000,
+      "description": "Fleece-lined trucker jacket combining comfort with a classic style perfect for layering.",
+      "id": "-OnRc1J006",
+      "image": "",
+      "price": 69.99,
+      "title": "Fleece-Lined Trucker"
+    },
+    "-OnRc1J007": {
+      "active": true,
+      "categoryIds": {
+        "-OnRc1JUABtKFq9UXGOA": true
+      },
+      "createdAt": 1773400600000,
+      "description": "Suede moto jacket with asymmetrical zipper and edgy details. A statement piece for bold fashion.",
+      "id": "-OnRc1J007",
+      "image": "",
+      "price": 139.99,
+      "title": "Suede Moto Jacket"
+    },
+    "-OnRc1J008": {
+      "active": true,
+      "categoryIds": {
+        "-OnRc1JUABtKFq9UXGOA": true
+      },
+      "createdAt": 1773400700000,
+      "description": "Lightweight summer jacket made from breathable cotton. Ideal for warm weather protection.",
+      "id": "-OnRc1J008",
+      "image": "",
+      "price": 44.99,
+      "title": "Breathable Cotton Jacket"
+    },
+    "-OnRc1J009": {
+      "active": true,
+      "categoryIds": {
+        "-OnRc1JUABtKFq9UXGOA": true
+      },
+      "createdAt": 1773400800000,
+      "description": "Hooded softshell jacket with water-resistant coating. Perfect for hiking and outdoor adventures.",
+      "id": "-OnRc1J009",
+      "image": "",
+      "price": 84.99,
+      "title": "Softshell Adventure Jacket"
+    },
+    "-OnRc1J010": {
+      "active": true,
+      "categoryIds": {
+        "-OnRc1JUABtKFq9UXGOA": true
+      },
+      "createdAt": 1773400900000,
+      "description": "Reversible jacket with two distinct styles in one. Made from durable polyester with taped seams.",
+      "id": "-OnRc1J010",
+      "image": "",
+      "price": 94.99,
+      "title": "Reversible Double-Sided Jacket"
+    },
+    "-OnRc70001": {
+      "active": true,
+      "categoryIds": {
+        "-OnRc70Qg9qNnJpqJSon": true
+      },
+      "createdAt": 1773401000000,
+      "description": "Elegant black evening gown with floor-length design and delicate beading. Perfect for special occasions.",
+      "id": "-OnRc70001",
+      "image": "",
+      "price": 159.99,
+      "title": "Black Evening Gown"
+    },
+    "-OnRc70002": {
+      "active": true,
+      "categoryIds": {
+        "-OnRc70Qg9qNnJpqJSon": true
+      },
+      "createdAt": 1773401100000,
+      "description": "Casual summer sundress with floral print. Light and breezy for warm weather.",
+      "id": "-OnRc70002",
+      "image": "",
+      "price": 39.99,
+      "title": "Floral Summer Sundress"
+    },
+    "-OnRc70003": {
+      "active": true,
+      "categoryIds": {
+        "-OnRc70Qg9qNnJpqJSon": true
+      },
+      "createdAt": 1773401200000,
+      "description": "Little black dress with classic silhouette. A timeless wardrobe essential suitable for any occasion.",
+      "id": "-OnRc70003",
+      "image": "",
+      "price": 74.99,
+      "title": "Classic Little Black Dress"
+    },
+    "-OnRc70004": {
+      "active": true,
+      "categoryIds": {
+        "-OnRc70Qg9qNnJpqJSon": true
+      },
+      "createdAt": 1773401300000,
+      "description": "Wrap dress in vibrant colors with a flattering silhouette. Comfortable for all day wear.",
+      "id": "-OnRc70004",
+      "image": "",
+      "price": 59.99,
+      "title": "Vibrant Wrap Dress"
+    },
+    "-OnRc70005": {
+      "active": true,
+      "categoryIds": {
+        "-OnRc70Qg9qNnJpqJSon": true
+      },
+      "createdAt": 1773401400000,
+      "description": "Midi shirt dress with button-front closure. Versatile piece for both casual and professional settings.",
+      "id": "-OnRc70005",
+      "image": "",
+      "price": 54.99,
+      "title": "Midi Shirt Dress"
+    },
+    "-OnRc70006": {
+      "active": true,
+      "categoryIds": {
+        "-OnRc70Qg9qNnJpqJSon": true
+      },
+      "createdAt": 1773401500000,
+      "description": "Cocktail dress with sequin details and off-shoulder neckline. Glamorous and sophisticated.",
+      "id": "-OnRc70006",
+      "image": "",
+      "price": 94.99,
+      "title": "Sequin Cocktail Dress"
+    },
+    "-OnRc70007": {
+      "active": true,
+      "categoryIds": {
+        "-OnRc70Qg9qNnJpqJSon": true
+      },
+      "createdAt": 1773401600000,
+      "description": "Slip dress in satin finish with delicate straps. Elegant and minimalist for modern looks.",
+      "id": "-OnRc70007",
+      "image": "",
+      "price": 69.99,
+      "title": "Satin Slip Dress"
+    },
+    "-OnRc70008": {
+      "active": true,
+      "categoryIds": {
+        "-OnRc70Qg9qNnJpqJSon": true
+      },
+      "createdAt": 1773401700000,
+      "description": "Maxi dress with bohemian print and flowing silhouette. Perfect for beach and vacation wear.",
+      "id": "-OnRc70008",
+      "image": "",
+      "price": 64.99,
+      "title": "Bohemian Maxi Dress"
+    },
+    "-OnRc70009": {
+      "active": true,
+      "categoryIds": {
+        "-OnRc70Qg9qNnJpqJSon": true
+      },
+      "createdAt": 1773401800000,
+      "description": "Bodycon dress with color-blocking design. Flattering fit for a bold, modern look.",
+      "id": "-OnRc70009",
+      "image": "",
+      "price": 49.99,
+      "title": "Color-Block Bodycon Dress"
+    },
+    "-OnRc70010": {
+      "active": true,
+      "categoryIds": {
+        "-OnRc70Qg9qNnJpqJSon": true
+      },
+      "createdAt": 1773401900000,
+      "description": "A-line dress with patterned print and pockets. Comfortable and practical for everyday wear.",
+      "id": "-OnRc70010",
+      "image": "",
+      "price": 44.99,
+      "title": "Patterned A-Line Dress"
+    },
+    "-OnRc9n001": {
+      "active": true,
+      "categoryIds": {
+        "-OnRc9noTqIP3sD-jVEL": true
+      },
+      "createdAt": 1773402000000,
+      "description": "Classic black pencil skirt with a flattering fit. Perfect for office or formal events.",
+      "id": "-OnRc9n001",
+      "image": "",
+      "price": 49.99,
+      "title": "Classic Pencil Skirt"
+    },
+    "-OnRc9n002": {
+      "active": true,
+      "categoryIds": {
+        "-OnRc9noTqIP3sD-jVEL": true
+      },
+      "createdAt": 1773402100000,
+      "description": "Flowing midi skirt with vintage-inspired print. Comfortable and stylish for casual wear.",
+      "id": "-OnRc9n002",
+      "image": "",
+      "price": 39.99,
+      "title": "Vintage Print Midi Skirt"
+    },
+    "-OnRc9n003": {
+      "active": true,
+      "categoryIds": {
+        "-OnRc9noTqIP3sD-jVEL": true
+      },
+      "createdAt": 1773402200000,
+      "description": "Denim mini skirt with distressed details. A versatile piece for everyday outfits.",
+      "id": "-OnRc9n003",
+      "image": "",
+      "price": 34.99,
+      "title": "Distressed Denim Mini"
+    },
+    "-OnRc9n004": {
+      "active": true,
+      "categoryIds": {
+        "-OnRc9noTqIP3sD-jVEL": true
+      },
+      "createdAt": 1773402300000,
+      "description": "Maxi skirt with high slit and elegant drape. Perfect for evening or special occasions.",
+      "id": "-OnRc9n004",
+      "image": "",
+      "price": 64.99,
+      "title": "Slit Maxi Skirt"
+    },
+    "-OnRc9n005": {
+      "active": true,
+      "categoryIds": {
+        "-OnRc9noTqIP3sD-jVEL": true
+      },
+      "createdAt": 1773402400000,
+      "description": "Pleated skirt with knee-length cut. Classic and elegant for professional settings.",
+      "id": "-OnRc9n005",
+      "image": "",
+      "price": 54.99,
+      "title": "Pleated Knee-Length Skirt"
+    },
+    "-OnRc9n006": {
+      "active": true,
+      "categoryIds": {
+        "-OnRc9noTqIP3sD-jVEL": true
+      },
+      "createdAt": 1773402500000,
+      "description": "Sequin skirt with shimmering details. Perfect for parties and special celebrations.",
+      "id": "-OnRc9n006",
+      "image": "",
+      "price": 59.99,
+      "title": "Sequin Party Skirt"
+    },
+    "-OnRc9n007": {
+      "active": true,
+      "categoryIds": {
+        "-OnRc9noTqIP3sD-jVEL": true
+      },
+      "createdAt": 1773402600000,
+      "description": "Wrap skirt with adjustable waist and comfortable fit. Versatile for many occasions.",
+      "id": "-OnRc9n007",
+      "image": "",
+      "price": 44.99,
+      "title": "Adjustable Wrap Skirt"
+    },
+    "-OnRc9n008": {
+      "active": true,
+      "categoryIds": {
+        "-OnRc9noTqIP3sD-jVEL": true
+      },
+      "createdAt": 1773402700000,
+      "description": "A-line skirt in neutral tones with pockets. Perfect for casual and smart casual looks.",
+      "id": "-OnRc9n008",
+      "image": "",
+      "price": 39.99,
+      "title": "Neutral A-Line Skirt"
+    },
+    "-OnRc9n009": {
+      "active": true,
+      "categoryIds": {
+        "-OnRc9noTqIP3sD-jVEL": true
+      },
+      "createdAt": 1773402800000,
+      "description": "Athletic tennis skirt with built-in shorts. Great for sports and active wear.",
+      "id": "-OnRc9n009",
+      "image": "",
+      "price": 44.99,
+      "title": "Athletic Tennis Skirt"
+    },
+    "-OnRc9n010": {
+      "active": true,
+      "categoryIds": {
+        "-OnRc9noTqIP3sD-jVEL": true
+      },
+      "createdAt": 1773402900000,
+      "description": "Chambray skirt with casual style and comfortable fit. Perfect for relaxed everyday wear.",
+      "id": "-OnRc9n010",
+      "image": "",
+      "price": 49.99,
+      "title": "Casual Chambray Skirt"
+    },
+    "-OnRcC7001": {
+      "active": true,
+      "categoryIds": {
+        "-OnRcC7U2nrGqKlcE6Tt": true
+      },
+      "createdAt": 1773403000000,
+      "description": "High-waisted yoga pants with pockets and moisture-wicking technology. Perfect for workouts.",
+      "id": "-OnRcC7001",
+      "image": "",
+      "price": 64.99,
+      "title": "High-Waisted Yoga Pants"
+    },
+    "-OnRcC7002": {
+      "active": true,
+      "categoryIds": {
+        "-OnRcC7U2nrGqKlcE6Tt": true
+      },
+      "createdAt": 1773403100000,
+      "description": "Compression leggings with seamless construction. Ideal for all types of athletic activities.",
+      "id": "-OnRcC7002",
+      "image": "",
+      "price": 54.99,
+      "title": "Seamless Compression Leggings"
+    },
+    "-OnRcC7003": {
+      "active": true,
+      "categoryIds": {
+        "-OnRcC7U2nrGqKlcE6Tt": true
+      },
+      "createdAt": 1773403200000,
+      "description": "Running shorts with zippered pockets and reflective details for safety.",
+      "id": "-OnRcC7003",
+      "image": "",
+      "price": 34.99,
+      "title": "Running Shorts with Pockets"
+    },
+    "-OnRcC7004": {
+      "active": true,
+      "categoryIds": {
+        "-OnRcC7U2nrGqKlcE6Tt": true
+      },
+      "createdAt": 1773403300000,
+      "description": "Sports bra with adjustable straps and supportive design. Essential for active women.",
+      "id": "-OnRcC7004",
+      "image": "",
+      "price": 44.99,
+      "title": "High-Support Sports Bra"
+    },
+    "-OnRcC7005": {
+      "active": true,
+      "categoryIds": {
+        "-OnRcC7U2nrGqKlcE6Tt": true
+      },
+      "createdAt": 1773403400000,
+      "description": "Athletic tank top with racerback design and breathable mesh. Perfect for gym sessions.",
+      "id": "-OnRcC7005",
+      "image": "",
+      "price": 29.99,
+      "title": "Racerback Athletic Tank"
+    },
+    "-OnRcC7006": {
+      "active": true,
+      "categoryIds": {
+        "-OnRcC7U2nrGqKlcE6Tt": true
+      },
+      "createdAt": 1773403500000,
+      "description": "Capri leggings with high-rise design and pockets. Comfortable for workouts and casual wear.",
+      "id": "-OnRcC7006",
+      "image": "",
+      "price": 49.99,
+      "title": "Capri Leggings with Pockets"
+    },
+    "-OnRcC7007": {
+      "active": true,
+      "categoryIds": {
+        "-OnRcC7U2nrGqKlcE6Tt": true
+      },
+      "createdAt": 1773403600000,
+      "description": "Bike shorts with thick waistband and high coverage. Versatile for gym or casual outings.",
+      "id": "-OnRcC7007",
+      "image": "",
+      "price": 39.99,
+      "title": "High-Coverage Bike Shorts"
+    },
+    "-OnRcC7008": {
+      "active": true,
+      "categoryIds": {
+        "-OnRcC7U2nrGqKlcE6Tt": true
+      },
+      "createdAt": 1773403700000,
+      "description": "Sweatpants made from soft fleece. Comfortable loungewear and active wear combination.",
+      "id": "-OnRcC7008",
+      "image": "",
+      "price": 44.99,
+      "title": "Fleece Sweatpants"
+    },
+    "-OnRcC7009": {
+      "active": true,
+      "categoryIds": {
+        "-OnRcC7U2nrGqKlcE6Tt": true
+      },
+      "createdAt": 1773403800000,
+      "description": "Mesh workout top with ventilation zones and seamless construction for maximum comfort.",
+      "id": "-OnRcC7009",
+      "image": "",
+      "price": 34.99,
+      "title": "Ventilated Mesh Workout Top"
+    },
+    "-OnRcC7010": {
+      "active": true,
+      "categoryIds": {
+        "-OnRcC7U2nrGqKlcE6Tt": true
+      },
+      "createdAt": 1773403900000,
+      "description": "Jogger pants with tapered ankles and drawstring. Perfect for active pursuits and casual wear.",
+      "id": "-OnRcC7010",
+      "image": "",
+      "price": 54.99,
+      "title": "Tapered Jogger Pants"
+    },
+    "-OnRcEi001": {
+      "active": true,
+      "categoryIds": {
+        "-OnRcEiRe0WVNdKuR_DX": true
+      },
+      "createdAt": 1773404000000,
+      "description": "Classic leather belt with brushed metal buckle. Versatile accessory for any outfit.",
+      "id": "-OnRcEi001",
+      "image": "",
+      "price": 39.99,
+      "title": "Leather Classic Belt"
+    },
+    "-OnRcEi002": {
+      "active": true,
+      "categoryIds": {
+        "-OnRcEiRe0WVNdKuR_DX": true
+      },
+      "createdAt": 1773404100000,
+      "description": "Silk scarf with vibrant floral pattern. Can be worn multiple ways for different looks.",
+      "id": "-OnRcEi002",
+      "image": "",
+      "price": 34.99,
+      "title": "Silk Floral Scarf"
+    },
+    "-OnRcEi003": {
+      "active": true,
+      "categoryIds": {
+        "-OnRcEiRe0WVNdKuR_DX": true
+      },
+      "createdAt": 1773404200000,
+      "description": "Wool beanie in multiple colors. Perfect for warmth and casual style during cold months.",
+      "id": "-OnRcEi003",
+      "image": "",
+      "price": 24.99,
+      "title": "Wool Knit Beanie"
+    },
+    "-OnRcEi004": {
+      "active": true,
+      "categoryIds": {
+        "-OnRcEiRe0WVNdKuR_DX": true
+      },
+      "createdAt": 1773404300000,
+      "description": "Cashmere gloves with soft lining. Luxurious and warm for winter accessorizing.",
+      "id": "-OnRcEi004",
+      "image": "",
+      "price": 49.99,
+      "title": "Cashmere Winter Gloves"
+    },
+    "-OnRcEi005": {
+      "active": true,
+      "categoryIds": {
+        "-OnRcEiRe0WVNdKuR_DX": true
+      },
+      "createdAt": 1773404400000,
+      "description": "Wide brim sun hat made from straw. Essential for beach and outdoor protection.",
+      "id": "-OnRcEi005",
+      "image": "",
+      "price": 44.99,
+      "title": "Straw Sun Hat"
+    },
+    "-OnRcEi006": {
+      "active": true,
+      "categoryIds": {
+        "-OnRcEiRe0WVNdKuR_DX": true
+      },
+      "createdAt": 1773404500000,
+      "description": "Decorative hairclip with crystal details. Perfect for adding sparkle to any hairstyle.",
+      "id": "-OnRcEi006",
+      "image": "",
+      "price": 19.99,
+      "title": "Crystal Hairclip"
+    },
+    "-OnRcEi007": {
+      "active": true,
+      "categoryIds": {
+        "-OnRcEiRe0WVNdKuR_DX": true
+      },
+      "createdAt": 1773404600000,
+      "description": "Canvas crossbody bag with multiple compartments. Practical and stylish everyday bag.",
+      "id": "-OnRcEi007",
+      "image": "",
+      "price": 59.99,
+      "title": "Canvas Crossbody Bag"
+    },
+    "-OnRcEi008": {
+      "active": true,
+      "categoryIds": {
+        "-OnRcEiRe0WVNdKuR_DX": true
+      },
+      "createdAt": 1773404700000,
+      "description": "Metal chain necklace with pendant. Elegant piece to complement any outfit.",
+      "id": "-OnRcEi008",
+      "image": "",
+      "price": 29.99,
+      "title": "Chain Pendant Necklace"
+    },
+    "-OnRcEi009": {
+      "active": true,
+      "categoryIds": {
+        "-OnRcEiRe0WVNdKuR_DX": true
+      },
+      "createdAt": 1773404800000,
+      "description": "Woven sunglasses with UV protection. Stylish and functional summer accessory.",
+      "id": "-OnRcEi009",
+      "image": "",
+      "price": 54.99,
+      "title": "UV Protection Sunglasses"
+    },
+    "-OnRcEi010": {
+      "active": true,
+      "categoryIds": {
+        "-OnRcEiRe0WVNdKuR_DX": true
+      },
+      "createdAt": 1773404900000,
+      "description": "Geometric patterned scarf wrap. Versatile piece that can be styled in multiple ways.",
+      "id": "-OnRcEi010",
+      "image": "",
+      "price": 39.99,
+      "title": "Geometric Scarf Wrap"
+    },
+    "-OnRu61001": {
+      "active": true,
+      "categoryIds": {
+        "-OnRu61BH_0uE58uSU7l": true
+      },
+      "createdAt": 1773405000000,
+      "description": "Striped t-shirt with classic cotton construction. A wardrobe staple for casual wear.",
+      "id": "-OnRu61001",
+      "image": "",
+      "price": 24.99,
+      "title": "Classic Striped T-Shirt"
+    },
+    "-OnRu61002": {
+      "active": true,
+      "categoryIds": {
+        "-OnRu61BH_0uE58uSU7l": true
+      },
+      "createdAt": 1773405100000,
+      "description": "V-neck t-shirt made from premium cotton blend. Flattering fit for all body types.",
+      "id": "-OnRu61002",
+      "image": "",
+      "price": 28.99,
+      "title": "Premium V-Neck T-Shirt"
+    },
+    "-OnRu61003": {
+      "active": true,
+      "categoryIds": {
+        "-OnRu61BH_0uE58uSU7l": true
+      },
+      "createdAt": 1773405200000,
+      "description": "Henley t-shirt with button placket and long sleeves. Perfect for layering or solo wear.",
+      "id": "-OnRu61003",
+      "image": "",
+      "price": 32.99,
+      "title": "Long-Sleeve Henley"
+    },
+    "-OnRu61004": {
+      "active": true,
+      "categoryIds": {
+        "-OnRu61BH_0uE58uSU7l": true
+      },
+      "createdAt": 1773405300000,
+      "description": "Tie-dye t-shirt with vibrant colors. Fun and trendy piece for casual outfits.",
+      "id": "-OnRu61004",
+      "image": "",
+      "price": 26.99,
+      "title": "Tie-Dye T-Shirt"
+    },
+    "-OnRu61005": {
+      "active": true,
+      "categoryIds": {
+        "-OnRu61BH_0uE58uSU7l": true
+      },
+      "createdAt": 1773405400000,
+      "description": "Logo print t-shirt in soft cotton. Great for representing favorite brands and styles.",
+      "id": "-OnRu61005",
+      "image": "",
+      "price": 25.99,
+      "title": "Logo Print T-Shirt"
+    },
+    "-OnRu61006": {
+      "active": true,
+      "categoryIds": {
+        "-OnRu61BH_0uE58uSU7l": true
+      },
+      "createdAt": 1773405500000,
+      "description": "Crew neck basics t-shirt in essential colors. Foundation piece for any wardrobe.",
+      "id": "-OnRu61006",
+      "image": "",
+      "price": 21.99,
+      "title": "Crew Neck Basics"
+    },
+    "-OnRu61007": {
+      "active": true,
+      "categoryIds": {
+        "-OnRu61BH_0uE58uSU7l": true
+      },
+      "createdAt": 1773405600000,
+      "description": "Color-blocked t-shirt with modern design. Trendy piece for fashion-forward looks.",
+      "id": "-OnRu61007",
+      "image": "",
+      "price": 27.99,
+      "title": "Color-Block T-Shirt"
+    },
+    "-OnRu61008": {
+      "active": true,
+      "categoryIds": {
+        "-OnRu61BH_0uE58uSU7l": true
+      },
+      "createdAt": 1773405700000,
+      "description": "Textured knit t-shirt with subtle pattern. Adds visual interest to basic outfits.",
+      "id": "-OnRu61008",
+      "image": "",
+      "price": 31.99,
+      "title": "Textured Knit T-Shirt"
+    },
+    "-OnRu61009": {
+      "active": true,
+      "categoryIds": {
+        "-OnRu61BH_0uE58uSU7l": true
+      },
+      "createdAt": 1773405800000,
+      "description": "Pocket t-shirt in classic style. Casual and practical for everyday wear.",
+      "id": "-OnRu61009",
+      "image": "",
+      "price": 26.99,
+      "title": "Classic Pocket T-Shirt"
+    },
+    "-OnRu61010": {
+      "active": true,
+      "categoryIds": {
+        "-OnRu61BH_0uE58uSU7l": true
+      },
+      "createdAt": 1773405900000,
+      "description": "Mandarin collar t-shirt with unique Asian-inspired design. Statement piece for fashion lovers.",
+      "id": "-OnRu61010",
+      "image": "",
+      "price": 34.99,
+      "title": "Mandarin Collar T-Shirt"
     }
   },
   "productsByCategory": {
     "-OnRc1JUABtKFq9UXGOA": {
       "-OnSB043fNXXaCo-rWtw": true,
       "-OnSB5IG4VD5poyUTFb4": true,
-      "-OnSBT0fC6yVVSJ_-0ws": true
+      "-OnSBT0fC6yVVSJ_-0ws": true,
+      "-OnRc1J001": true,
+      "-OnRc1J002": true,
+      "-OnRc1J003": true,
+      "-OnRc1J004": true,
+      "-OnRc1J005": true,
+      "-OnRc1J006": true,
+      "-OnRc1J007": true,
+      "-OnRc1J008": true,
+      "-OnRc1J009": true,
+      "-OnRc1J010": true
+    },
+    "-OnRc70Qg9qNnJpqJSon": {
+      "-OnRc70001": true,
+      "-OnRc70002": true,
+      "-OnRc70003": true,
+      "-OnRc70004": true,
+      "-OnRc70005": true,
+      "-OnRc70006": true,
+      "-OnRc70007": true,
+      "-OnRc70008": true,
+      "-OnRc70009": true,
+      "-OnRc70010": true
+    },
+    "-OnRc9noTqIP3sD-jVEL": {
+      "-OnRc9n001": true,
+      "-OnRc9n002": true,
+      "-OnRc9n003": true,
+      "-OnRc9n004": true,
+      "-OnRc9n005": true,
+      "-OnRc9n006": true,
+      "-OnRc9n007": true,
+      "-OnRc9n008": true,
+      "-OnRc9n009": true,
+      "-OnRc9n010": true
     },
     "-OnRcC7U2nrGqKlcE6Tt": {
       "-OnSBT0fC6yVVSJ_-0ws": true,
-      "-OnWMwzX_AqF__GdpC8-": true
+      "-OnWMwzX_AqF__GdpC8-": true,
+      "-OnRcC7001": true,
+      "-OnRcC7002": true,
+      "-OnRcC7003": true,
+      "-OnRcC7004": true,
+      "-OnRcC7005": true,
+      "-OnRcC7006": true,
+      "-OnRcC7007": true,
+      "-OnRcC7008": true,
+      "-OnRcC7009": true,
+      "-OnRcC7010": true
+    },
+    "-OnRcEiRe0WVNdKuR_DX": {
+      "-OnRcEi001": true,
+      "-OnRcEi002": true,
+      "-OnRcEi003": true,
+      "-OnRcEi004": true,
+      "-OnRcEi005": true,
+      "-OnRcEi006": true,
+      "-OnRcEi007": true,
+      "-OnRcEi008": true,
+      "-OnRcEi009": true,
+      "-OnRcEi010": true
     },
     "-OnRu61BH_0uE58uSU7l": {
       "-OnRYNSEO4gJgV6QcaQJ": true,
       "-OnRtU1TEREdZMt_YkrU": true,
       "-OnRw42QOY07vM931WLN": true,
-      "-OnWMQuKUFPnVDPd2MfI": true
+      "-OnWMQuKUFPnVDPd2MfI": true,
+      "-OnRu61001": true,
+      "-OnRu61002": true,
+      "-OnRu61003": true,
+      "-OnRu61004": true,
+      "-OnRu61005": true,
+      "-OnRu61006": true,
+      "-OnRu61007": true,
+      "-OnRu61008": true,
+      "-OnRu61009": true,
+      "-OnRu61010": true
     }
   },
   "userOrders": {
