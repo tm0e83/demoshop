@@ -6,8 +6,9 @@ import localFont from 'next/font/local'
 import { ToastContainer } from 'react-toastify';
 import ScrollToTop from '@/components/scroll-to-top';
 import Modal from '@/components/modal';
-import StoreProvider from '@/providers'
-import ClientLayout from './client-layout'
+import { QueryProvider, StoreProvider } from '@/providers';
+import ClientLayout from './client-layout';
+import { NuqsAdapter } from 'nuqs/adapters/next/app'
 
 const monaSans = localFont({
   src: [
@@ -122,10 +123,14 @@ export default function RootLayout({
 
         <Suspense>
           <StoreProvider>
-            <ClientLayout>
-              {children}
-              <Modal />
-            </ClientLayout>
+            <QueryProvider>
+              <NuqsAdapter>
+                <ClientLayout>
+                  {children}
+                  <Modal />
+                </ClientLayout>
+              </NuqsAdapter>
+            </QueryProvider>
           </StoreProvider>
         </Suspense>
       </body>

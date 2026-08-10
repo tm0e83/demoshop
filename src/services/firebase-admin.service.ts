@@ -1,5 +1,6 @@
+import { cacheLife, cacheTag } from 'next/cache';
 import type { CategoryType, ProductType } from '@/typings';
-import type { Query, QueryDocumentSnapshot } from "firebase-admin/firestore";
+import type { Query, QueryDocumentSnapshot } from 'firebase-admin/firestore';
 import { db } from '@/config/firebase-admin';
 
 export const getProduct = async (productId: string): Promise<ProductType | null> => {
@@ -46,7 +47,7 @@ export const getLatestProducts = async (maxResults: number = 0): Promise<Product
 
 export const getCategories = async (): Promise<CategoryType[]> => {
   try {
-    const snapshot = await db.collection("categories").get();
+    const snapshot = await db.collection('categories').get();
 
     if (snapshot.empty) return [];
 
@@ -55,7 +56,53 @@ export const getCategories = async (): Promise<CategoryType[]> => {
       id: doc.id,
     })) as CategoryType[];
   } catch (error) {
-    console.error("Error getting categories:", error);
+    console.error('Error getting categories:', error);
     throw error;
   }
 };
+
+export const getCategory = async (categoryId: string): Promise<CategoryType | null> => {
+  'use cache';
+  cacheLife('hours');
+  cacheTag('categories', `category-${categoryId}`);
+
+  try {
+    const snapshot = await db.collection('categories').doc(categoryId).get();
+    if (!snapshot.exists) return null;
+
+    const data = snapshot.data()!;
+
+    return {
+      ...data,
+      id: snapshot.id,
+      createdAt: data.createdAt.toMillis(),
+    } as CategoryType;
+  } catch (error) {
+    console.error('Error getting category data:', error);
+    throw error;
+  }
+}
+
+export const getCategoryProducts = async (categoryId: string): Promise<ProductType[]> => {
+  'use cache';
+  cacheLife('hours');
+  cacheTag('category-products', `category-products-${categoryId}`);
+
+  try {
+    const snapshot = await db
+      .collection('products')
+      .where('categoryIds', 'array-contains', categoryId)
+      .get();
+
+    if (snapshot.empty) return [];
+
+    return snapshot.docs.map((doc) => ({
+      ...doc.data(),
+      id: doc.id,
+      createdAt: doc.data().createdAt.toMillis(),
+    })) as ProductType[];
+  } catch (error) {
+    console.error('Error getting products:', error);
+    throw error;
+  }
+}

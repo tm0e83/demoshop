@@ -4,13 +4,14 @@ import styles from './range-slider.module.css';
 import { useState } from 'react';
 
 type RangeSliderProps = {
+  id: string;
   min: number;
   max: number;
   step?: number;
   onChange: (min: number, max: number) => void;
 };
 
-export default function RangeSlider({ min, max, step = 1, onChange }: RangeSliderProps) {
+export default function RangeSlider({ id, min, max, step = 1, onChange }: RangeSliderProps) {
   const [minValue, setMinValue] = useState(min);
   const [maxValue, setMaxValue] = useState(max);
 
@@ -35,16 +36,16 @@ export default function RangeSlider({ min, max, step = 1, onChange }: RangeSlide
       <div className={styles.rangeSlider}>
         <div className={styles.slider}>
           <div className={styles.track}></div>
-          <input type="range" id="minRange" min={min} max={max} step={step} value={minValue} onChange={handleMinChange} />
-          <input type="range" id="maxRange" min={min} max={max} step={step} value={maxValue} onChange={handleMaxChange} />
+          <input type="range" id={`minRange-${id}`} min={min} max={max} step={step} value={minValue} onChange={handleMinChange} />
+          <input type="range" id={`maxRange-${id}`} min={min} max={max} step={step} value={maxValue} onChange={handleMaxChange} />
         </div>
         <div className={styles.rangeValues}>
           <div className={styles.rangeValue}>
-            <input type="number" id="minInput" min={min} max={max} step={step} value={minValue} onChange={handleMinChange} />
+            <input type="number" id={`minInput-${id}`} min={min} max={max} step={step} value={minValue} onChange={handleMinChange} />
           </div>
           <span>-</span>
           <div className={styles.rangeValue}>
-            <input type="number" id="maxInput" min={min} max={max} step={step} value={maxValue} onChange={handleMaxChange} />
+            <input type="number" id={`maxInput-${id}`} min={min} max={max} step={step} value={maxValue} onChange={handleMaxChange} />
           </div>
         </div>
       </div>
