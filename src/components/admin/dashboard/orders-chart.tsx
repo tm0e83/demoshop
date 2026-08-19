@@ -28,10 +28,10 @@ export default function OrdersChart({ orders }: { readonly orders: OrderType[] }
     <Card className={styles.ordersChart}>
       <Title level={3}>Orders last 7 days</Title>
       <ResponsiveContainer width="100%" height={300}>
-        <BarChart data={chartData} margin={{ top: 0, right: 0, left: 0, bottom: 0 }}>
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="date" />
-          <YAxis allowDecimals={false} width={50} tickMargin={10} />
+        <BarChart data={chartData} margin={{ top: 25, right: 0, left: 0, bottom: 0 }}>
+          <CartesianGrid stroke="#e0e0e0" vertical={false} />
+          <XAxis dataKey="date" axisLine={false} tickLine={false} />
+          <YAxis allowDecimals={false} width={50} tickMargin={10} axisLine={false} tickLine={false} />
           <Tooltip cursor={false} />
           <Bar dataKey="count" fill="var(--palette-3)" activeBar={false} />
         </BarChart>

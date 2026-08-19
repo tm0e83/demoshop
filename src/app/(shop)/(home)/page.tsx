@@ -42,7 +42,7 @@ export default async function Home() {
         <section className="product-section">
           <PageTitle center={true}>Featured Products</PageTitle>
           <ProductList>
-            {products.slice(0, 6).map((product) => (
+            {products.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
           </ProductList>
