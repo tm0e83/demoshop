@@ -17,6 +17,7 @@ body {
   --color-gray-800: rgb(30, 41, 59);
   --color-gray-900: rgb(15, 23, 42);
   --color-gray-950: rgb(2, 6, 23);
+  --color-blue: #007bff;
   --color-mint: #ebf4f3;
   --color-primary: #000;
   --color-secondary: var(--color-primary);
@@ -27,11 +28,12 @@ body {
   --color-disabled: var(--color-gray-400);
   --body-font-color: #000;
   --body-bg-color: #fff;
-  
-  --palette-red: #e83f6f;
-  --palette-green: #32936f;
-  --palette-blue: #2274a5;
-  --palette-yellow: #ffbf00;
+
+  --palette-1: #a05aff;
+  --palette-2: #1bcfb4;
+  --palette-3: #4bcbeb;
+  --palette-4: #fe9496;
+  --palette-5: #9e58ff;
 
   font-size: 16px;
   color: var(--body-font-color);
@@ -165,7 +167,7 @@ a {
   &:hover {
     text-decoration: underline;
   }
-  
+
   &.active {
     font-weight: bold;
   }
@@ -257,7 +259,7 @@ a {
   .input {
     flex: 1;
     margin: 0;
-    
+
     input {
       padding-right: 2.5rem;
       margin: 0;
@@ -279,7 +281,7 @@ a {
   .item-grid-head {
     display: none;
     font-weight: bold;
-    gap: 1rem; 
+    gap: 1rem;
   }
 
   .item-grid-body {
@@ -292,15 +294,15 @@ a {
       }
     }
   }
-  
+
   .item {
-    display: flex;  
+    display: flex;
     flex-direction: column;
     gap: 0 1rem;
     flex: 1;
     padding: 0.5rem 1rem;
   }
-  
+
   .item-column {
     flex: 1;
     padding: 0.25rem 0;
@@ -318,7 +320,7 @@ a {
   .item-label {
     font-weight: bold;
   }
- 
+
   @container itemGrid (width > 800px) {
     .item-grid-head {
       display: block;
@@ -326,11 +328,11 @@ a {
 
     .item-grid-body {
       gap: 0;
-    }    
-    
+    }
+
     .item {
       flex-direction: row;
-    }    
+    }
 
     .item-label {
       display: none;

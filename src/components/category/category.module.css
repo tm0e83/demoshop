@@ -7,6 +7,19 @@
 
   .categoryName {
     font-size: 1.3rem;
-    font-weight: bold;    
+    font-weight: bold;
+  }
+
+  .categoryImage {
+    overflow: hidden;
+    border-radius: 50%;
+
+    img {
+      transition: transform 0.3s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.5);
+    }
   }
 }

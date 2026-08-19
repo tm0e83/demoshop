@@ -125,6 +125,479 @@
       "shippingMethodId": "express",
       "status": "paid",
       "uid": "yDoOOSVHzxXk8tnvWFeY2jtvlGh2"
+    },
+    "-OzkgQnWJejP14w-uFX5": {
+      "billingAddress": {
+        "city": "Groß-Rohrheim",
+        "country": "Germany",
+        "firstname": "Timo",
+        "id": "-Oo-PKULihXFvl4fkYSE",
+        "lastname": "Ribeiro Szyszka",
+        "street": "Neugasse 21",
+        "zipcode": "68649"
+      },
+      "createdAt": 1773998929476,
+      "id": "-OzkgQnWJejP14w-uFX5",
+      "items": [
+        {
+          "active": true,
+          "categoryIds": {
+            "-OnRcC7U2nrGqKlcE6Tt": true
+          },
+          "createdAt": 1773403300000,
+          "description": "Sports bra with adjustable straps and supportive design. Essential for active women.",
+          "id": "-OnRcC7004",
+          "image": "",
+          "price": 44.99,
+          "quantity": 3,
+          "title": "High-Support Sports Bra"
+        },
+        {
+          "active": true,
+          "categoryIds": {
+            "-OnRu61BH_0uE58uSU7l": true
+          },
+          "createdAt": 1773405900000,
+          "description": "Mandarin collar t-shirt with unique Asian-inspired design. Statement piece for fashion lovers.",
+          "id": "-OnRu61010",
+          "image": "",
+          "price": 34.99,
+          "quantity": 3,
+          "title": "Mandarin Collar T-Shirt"
+        }
+      ],
+      "orderPlaced": true,
+      "paymentMethodId": "paypal",
+      "shippingAddress": {
+        "city": "Groß-Rohrheim",
+        "country": "Germany",
+        "firstname": "Timo",
+        "id": "-Oo-PKULihXFvl4fkYSE",
+        "lastname": "Ribeiro Szyszka",
+        "street": "Neugasse 21",
+        "zipcode": "68649"
+      },
+      "shippingMethodId": "express",
+      "status": "paid",
+      "uid": "yDoOOSVHzxXk8tnvWFeY2jtvlGh2"
+    },
+    "-OzkgQnWJejP14w-uFX6": {
+      "billingAddress": {
+        "city": "Groß-Rohrheim",
+        "country": "Germany",
+        "firstname": "Timo",
+        "id": "-Oo-PKULihXFvl4fkYSE",
+        "lastname": "Ribeiro Szyszka",
+        "street": "Neugasse 21",
+        "zipcode": "68649"
+      },
+      "createdAt": 1773998929476,
+      "id": "-OzkgQnWJejP14w-uFX6",
+      "items": [
+        {
+          "active": true,
+          "categoryIds": {
+            "-OnRc9noTqIP3sD-jVEL": true
+          },
+          "createdAt": 1773402400000,
+          "description": "Pleated skirt with knee-length cut. Classic and elegant for professional settings.",
+          "id": "-OnRc9n005",
+          "image": "",
+          "price": 54.99,
+          "quantity": 1,
+          "title": "Pleated Knee-Length Skirt"
+        }
+      ],
+      "orderPlaced": true,
+      "paymentMethodId": "paypal",
+      "shippingAddress": {
+        "city": "Groß-Rohrheim",
+        "country": "Germany",
+        "firstname": "Timo",
+        "id": "-Oo-PKULihXFvl4fkYSE",
+        "lastname": "Ribeiro Szyszka",
+        "street": "Neugasse 21",
+        "zipcode": "68649"
+      },
+      "shippingMethodId": "express",
+      "status": "paid",
+      "uid": "yDoOOSVHzxXk8tnvWFeY2jtvlGh2"
+    },
+    "-OzkgQnWJejP14w-uFX7": {
+      "billingAddress": {
+        "city": "Groß-Rohrheim",
+        "country": "Germany",
+        "firstname": "Timo",
+        "id": "-Oo-PKULihXFvl4fkYSE",
+        "lastname": "Ribeiro Szyszka",
+        "street": "Neugasse 21",
+        "zipcode": "68649"
+      },
+      "createdAt": 1773998929476,
+      "id": "-OzkgQnWJejP14w-uFX7",
+      "items": [
+        {
+          "active": true,
+          "categoryIds": {
+            "-OnRc1JUABtKFq9UXGOA": true
+          },
+          "createdAt": 1773237462261,
+          "description": "Warm and durable winter parka with insulated lining for cold temperatures. Includes a padded hood, multiple pockets, and water-resistant outer material for reliable winter protection.",
+          "id": "-OnSB5IG4VD5poyUTFb4",
+          "image": "",
+          "price": 119.99,
+          "quantity": 3,
+          "title": "Insulated Winter Parka"
+        }
+      ],
+      "orderPlaced": true,
+      "paymentMethodId": "paypal",
+      "shippingAddress": {
+        "city": "Groß-Rohrheim",
+        "country": "Germany",
+        "firstname": "Timo",
+        "id": "-Oo-PKULihXFvl4fkYSE",
+        "lastname": "Ribeiro Szyszka",
+        "street": "Neugasse 21",
+        "zipcode": "68649"
+      },
+      "shippingMethodId": "express",
+      "status": "paid",
+      "uid": "yDoOOSVHzxXk8tnvWFeY2jtvlGh2"
+    },
+    "-OzkgQnWJejP14w-uFX8": {
+      "billingAddress": {
+        "city": "Groß-Rohrheim",
+        "country": "Germany",
+        "firstname": "Timo",
+        "id": "-Oo-PKULihXFvl4fkYSE",
+        "lastname": "Ribeiro Szyszka",
+        "street": "Neugasse 21",
+        "zipcode": "68649"
+      },
+      "createdAt": 1773998929476,
+      "id": "-OzkgQnWJejP14w-uFX8",
+      "items": [
+        {
+          "active": true,
+          "categoryIds": {
+            "-OnRc1JUABtKFq9UXGOA": true,
+            "-OnRcC7U2nrGqKlcE6Tt": true
+          },
+          "createdAt": 1773237559439,
+          "description": "A lightweight and breathable running jacket designed for athletic activities and outdoor training. Made with flexible, moisture-wicking fabric and a wind-resistant outer layer.",
+          "id": "-OnSBT0fC6yVVSJ_-0ws",
+          "image": "",
+          "price": 79.99,
+          "quantity": 1,
+          "title": "Performance Running Jacket"
+        },
+        {
+          "active": true,
+          "categoryIds": {
+            "-OnRc9noTqIP3sD-jVEL": true
+          },
+          "createdAt": 1773402000000,
+          "description": "Classic black pencil skirt with a flattering fit. Perfect for office or formal events.",
+          "id": "-OnRc9n001",
+          "image": "",
+          "price": 49.99,
+          "quantity": 1,
+          "title": "Classic Pencil Skirt"
+        }
+      ],
+      "orderPlaced": true,
+      "paymentMethodId": "paypal",
+      "shippingAddress": {
+        "city": "Groß-Rohrheim",
+        "country": "Germany",
+        "firstname": "Timo",
+        "id": "-Oo-PKULihXFvl4fkYSE",
+        "lastname": "Ribeiro Szyszka",
+        "street": "Neugasse 21",
+        "zipcode": "68649"
+      },
+      "shippingMethodId": "express",
+      "status": "paid",
+      "uid": "yDoOOSVHzxXk8tnvWFeY2jtvlGh2"
+    },
+    "-OzkgQnWJejP14w-uFX9": {
+      "billingAddress": {
+        "city": "Groß-Rohrheim",
+        "country": "Germany",
+        "firstname": "Timo",
+        "id": "-Oo-PKULihXFvl4fkYSE",
+        "lastname": "Ribeiro Szyszka",
+        "street": "Neugasse 21",
+        "zipcode": "68649"
+      },
+      "createdAt": 1773998929476,
+      "id": "-OzkgQnWJejP14w-uFX9",
+      "items": [
+        {
+          "active": true,
+          "categoryIds": {
+            "-OnRu61BH_0uE58uSU7l": true
+          },
+          "createdAt": 1773307543221,
+          "description": "Sustainably produced t-shirt made from 100% organic cotton. Soft, eco-friendly, and perfect for conscious shoppers.",
+          "id": "-OnWMQuKUFPnVDPd2MfI",
+          "image": "",
+          "price": 27.99,
+          "quantity": 2,
+          "title": "Organic Cotton Eco T-Shirt"
+        },
+        {
+          "active": true,
+          "categoryIds": {
+            "-OnRc1JUABtKFq9UXGOA": true
+          },
+          "createdAt": 1773400100000,
+          "description": "Denim jacket with a vintage wash and distressed details. Versatile piece for any wardrobe.",
+          "id": "-OnRc1J002",
+          "image": "",
+          "price": 64.99,
+          "quantity": 1,
+          "title": "Vintage Denim Jacket"
+        }
+      ],
+      "orderPlaced": true,
+      "paymentMethodId": "paypal",
+      "shippingAddress": {
+        "city": "Groß-Rohrheim",
+        "country": "Germany",
+        "firstname": "Timo",
+        "id": "-Oo-PKULihXFvl4fkYSE",
+        "lastname": "Ribeiro Szyszka",
+        "street": "Neugasse 21",
+        "zipcode": "68649"
+      },
+      "shippingMethodId": "express",
+      "status": "paid",
+      "uid": "yDoOOSVHzxXk8tnvWFeY2jtvlGh2"
+    },
+    "-OzkgQnWJejP14w-uFXA": {
+      "billingAddress": {
+        "city": "Groß-Rohrheim",
+        "country": "Germany",
+        "firstname": "Timo",
+        "id": "-Oo-PKULihXFvl4fkYSE",
+        "lastname": "Ribeiro Szyszka",
+        "street": "Neugasse 21",
+        "zipcode": "68649"
+      },
+      "createdAt": 1773998929476,
+      "id": "-OzkgQnWJejP14w-uFXA",
+      "items": [
+        {
+          "active": true,
+          "categoryIds": {
+            "-OnRu61BH_0uE58uSU7l": true
+          },
+          "createdAt": 1773233262839,
+          "description": "Casual t-shirt featuring a bold graphic print. A great statement piece for modern casual outfits.",
+          "id": "-OnRw42QOY07vM931WLN",
+          "image": "",
+          "price": 23.99,
+          "quantity": 1,
+          "title": "Graphic Print T-Shirt"
+        }
+      ],
+      "orderPlaced": true,
+      "paymentMethodId": "paypal",
+      "shippingAddress": {
+        "city": "Groß-Rohrheim",
+        "country": "Germany",
+        "firstname": "Timo",
+        "id": "-Oo-PKULihXFvl4fkYSE",
+        "lastname": "Ribeiro Szyszka",
+        "street": "Neugasse 21",
+        "zipcode": "68649"
+      },
+      "shippingMethodId": "express",
+      "status": "paid",
+      "uid": "yDoOOSVHzxXk8tnvWFeY2jtvlGh2"
+    },
+    "-OzkgQnWJejP14w-uFXB": {
+      "billingAddress": {
+        "city": "Groß-Rohrheim",
+        "country": "Germany",
+        "firstname": "Timo",
+        "id": "-Oo-PKULihXFvl4fkYSE",
+        "lastname": "Ribeiro Szyszka",
+        "street": "Neugasse 21",
+        "zipcode": "68649"
+      },
+      "createdAt": 1773998929476,
+      "id": "-OzkgQnWJejP14w-uFXB",
+      "items": [
+        {
+          "active": true,
+          "categoryIds": {
+            "-OnRc9noTqIP3sD-jVEL": true
+          },
+          "createdAt": 1773402800000,
+          "description": "Athletic tennis skirt with built-in shorts. Great for sports and active wear.",
+          "id": "-OnRc9n009",
+          "image": "",
+          "price": 44.99,
+          "quantity": 2,
+          "title": "Athletic Tennis Skirt"
+        }
+      ],
+      "orderPlaced": true,
+      "paymentMethodId": "paypal",
+      "shippingAddress": {
+        "city": "Groß-Rohrheim",
+        "country": "Germany",
+        "firstname": "Timo",
+        "id": "-Oo-PKULihXFvl4fkYSE",
+        "lastname": "Ribeiro Szyszka",
+        "street": "Neugasse 21",
+        "zipcode": "68649"
+      },
+      "shippingMethodId": "express",
+      "status": "paid",
+      "uid": "yDoOOSVHzxXk8tnvWFeY2jtvlGh2"
+    },
+    "-OzkgQnWJejP14w-uFXC": {
+      "billingAddress": {
+        "city": "Groß-Rohrheim",
+        "country": "Germany",
+        "firstname": "Timo",
+        "id": "-Oo-PKULihXFvl4fkYSE",
+        "lastname": "Ribeiro Szyszka",
+        "street": "Neugasse 21",
+        "zipcode": "68649"
+      },
+      "createdAt": 1773998929476,
+      "id": "-OzkgQnWJejP14w-uFXC",
+      "items": [
+        {
+          "active": true,
+          "categoryIds": {
+            "-OnRcEiRe0WVNdKuR_DX": true
+          },
+          "createdAt": 1773404900000,
+          "description": "Geometric patterned scarf wrap. Versatile piece that can be styled in multiple ways.",
+          "id": "-OnRcEi010",
+          "image": "",
+          "price": 39.99,
+          "quantity": 3,
+          "title": "Geometric Scarf Wrap"
+        }
+      ],
+      "orderPlaced": true,
+      "paymentMethodId": "paypal",
+      "shippingAddress": {
+        "city": "Groß-Rohrheim",
+        "country": "Germany",
+        "firstname": "Timo",
+        "id": "-Oo-PKULihXFvl4fkYSE",
+        "lastname": "Ribeiro Szyszka",
+        "street": "Neugasse 21",
+        "zipcode": "68649"
+      },
+      "shippingMethodId": "express",
+      "status": "paid",
+      "uid": "yDoOOSVHzxXk8tnvWFeY2jtvlGh2"
+    },
+    "-OzkgQnWJejP14w-uFXD": {
+      "billingAddress": {
+        "city": "Groß-Rohrheim",
+        "country": "Germany",
+        "firstname": "Timo",
+        "id": "-Oo-PKULihXFvl4fkYSE",
+        "lastname": "Ribeiro Szyszka",
+        "street": "Neugasse 21",
+        "zipcode": "68649"
+      },
+      "createdAt": 1773998929476,
+      "id": "-OzkgQnWJejP14w-uFXD",
+      "items": [
+        {
+          "active": true,
+          "categoryIds": {
+            "-OnRc1JUABtKFq9UXGOA": true
+          },
+          "createdAt": 1773237462261,
+          "description": "Warm and durable winter parka with insulated lining for cold temperatures. Includes a padded hood, multiple pockets, and water-resistant outer material for reliable winter protection.",
+          "id": "-OnSB5IG4VD5poyUTFb4",
+          "image": "",
+          "price": 119.99,
+          "quantity": 3,
+          "title": "Insulated Winter Parka"
+        },
+        {
+          "active": true,
+          "categoryIds": {
+            "-OnRc9noTqIP3sD-jVEL": true
+          },
+          "createdAt": 1773402600000,
+          "description": "Wrap skirt with adjustable waist and comfortable fit. Versatile for many occasions.",
+          "id": "-OnRc9n007",
+          "image": "",
+          "price": 44.99,
+          "quantity": 2,
+          "title": "Adjustable Wrap Skirt"
+        }
+      ],
+      "orderPlaced": true,
+      "paymentMethodId": "paypal",
+      "shippingAddress": {
+        "city": "Groß-Rohrheim",
+        "country": "Germany",
+        "firstname": "Timo",
+        "id": "-Oo-PKULihXFvl4fkYSE",
+        "lastname": "Ribeiro Szyszka",
+        "street": "Neugasse 21",
+        "zipcode": "68649"
+      },
+      "shippingMethodId": "express",
+      "status": "paid",
+      "uid": "yDoOOSVHzxXk8tnvWFeY2jtvlGh2"
+    },
+    "-OzkgQnWJejP14w-uFXE": {
+      "billingAddress": {
+        "city": "Groß-Rohrheim",
+        "country": "Germany",
+        "firstname": "Timo",
+        "id": "-Oo-PKULihXFvl4fkYSE",
+        "lastname": "Ribeiro Szyszka",
+        "street": "Neugasse 21",
+        "zipcode": "68649"
+      },
+      "createdAt": 1773998929476,
+      "id": "-OzkgQnWJejP14w-uFXE",
+      "items": [
+        {
+          "active": true,
+          "categoryIds": {
+            "-OnRc9noTqIP3sD-jVEL": true
+          },
+          "createdAt": 1773402800000,
+          "description": "Athletic tennis skirt with built-in shorts. Great for sports and active wear.",
+          "id": "-OnRc9n009",
+          "image": "",
+          "price": 44.99,
+          "quantity": 3,
+          "title": "Athletic Tennis Skirt"
+        }
+      ],
+      "orderPlaced": true,
+      "paymentMethodId": "paypal",
+      "shippingAddress": {
+        "city": "Groß-Rohrheim",
+        "country": "Germany",
+        "firstname": "Timo",
+        "id": "-Oo-PKULihXFvl4fkYSE",
+        "lastname": "Ribeiro Szyszka",
+        "street": "Neugasse 21",
+        "zipcode": "68649"
+      },
+      "shippingMethodId": "express",
+      "status": "paid",
+      "uid": "yDoOOSVHzxXk8tnvWFeY2jtvlGh2"
     }
   },
   "products": {
@@ -958,96 +1431,6 @@
       "image": "",
       "price": 34.99,
       "title": "Mandarin Collar T-Shirt"
-    }
-  },
-  "productsByCategory": {
-    "-OnRc1JUABtKFq9UXGOA": {
-      "-OnSB043fNXXaCo-rWtw": true,
-      "-OnSB5IG4VD5poyUTFb4": true,
-      "-OnSBT0fC6yVVSJ_-0ws": true,
-      "-OnRc1J001": true,
-      "-OnRc1J002": true,
-      "-OnRc1J003": true,
-      "-OnRc1J004": true,
-      "-OnRc1J005": true,
-      "-OnRc1J006": true,
-      "-OnRc1J007": true,
-      "-OnRc1J008": true,
-      "-OnRc1J009": true,
-      "-OnRc1J010": true
-    },
-    "-OnRc70Qg9qNnJpqJSon": {
-      "-OnRc70001": true,
-      "-OnRc70002": true,
-      "-OnRc70003": true,
-      "-OnRc70004": true,
-      "-OnRc70005": true,
-      "-OnRc70006": true,
-      "-OnRc70007": true,
-      "-OnRc70008": true,
-      "-OnRc70009": true,
-      "-OnRc70010": true
-    },
-    "-OnRc9noTqIP3sD-jVEL": {
-      "-OnRc9n001": true,
-      "-OnRc9n002": true,
-      "-OnRc9n003": true,
-      "-OnRc9n004": true,
-      "-OnRc9n005": true,
-      "-OnRc9n006": true,
-      "-OnRc9n007": true,
-      "-OnRc9n008": true,
-      "-OnRc9n009": true,
-      "-OnRc9n010": true
-    },
-    "-OnRcC7U2nrGqKlcE6Tt": {
-      "-OnSBT0fC6yVVSJ_-0ws": true,
-      "-OnWMwzX_AqF__GdpC8-": true,
-      "-OnRcC7001": true,
-      "-OnRcC7002": true,
-      "-OnRcC7003": true,
-      "-OnRcC7004": true,
-      "-OnRcC7005": true,
-      "-OnRcC7006": true,
-      "-OnRcC7007": true,
-      "-OnRcC7008": true,
-      "-OnRcC7009": true,
-      "-OnRcC7010": true
-    },
-    "-OnRcEiRe0WVNdKuR_DX": {
-      "-OnRcEi001": true,
-      "-OnRcEi002": true,
-      "-OnRcEi003": true,
-      "-OnRcEi004": true,
-      "-OnRcEi005": true,
-      "-OnRcEi006": true,
-      "-OnRcEi007": true,
-      "-OnRcEi008": true,
-      "-OnRcEi009": true,
-      "-OnRcEi010": true
-    },
-    "-OnRu61BH_0uE58uSU7l": {
-      "-OnRYNSEO4gJgV6QcaQJ": true,
-      "-OnRtU1TEREdZMt_YkrU": true,
-      "-OnRw42QOY07vM931WLN": true,
-      "-OnWMQuKUFPnVDPd2MfI": true,
-      "-OnRu61001": true,
-      "-OnRu61002": true,
-      "-OnRu61003": true,
-      "-OnRu61004": true,
-      "-OnRu61005": true,
-      "-OnRu61006": true,
-      "-OnRu61007": true,
-      "-OnRu61008": true,
-      "-OnRu61009": true,
-      "-OnRu61010": true
-    }
-  },
-  "userOrders": {
-    "yDoOOSVHzxXk8tnvWFeY2jtvlGh2": {
-      "-Oo9ZrLWUjTuSQwyv2se": {
-        "-Oo9ZrLWUjTuSQwyv2se": true
-      }
     }
   },
   "users": {

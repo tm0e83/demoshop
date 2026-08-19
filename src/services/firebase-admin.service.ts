@@ -1,5 +1,5 @@
 import { cacheLife, cacheTag } from 'next/cache';
-import type { CategoryType, ProductType } from '@/typings';
+import type { CategoryType, OrderType, ProductType, UserType } from '@/typings';
 import type { Query, QueryDocumentSnapshot } from 'firebase-admin/firestore';
 import { db } from '@/config/firebase-admin';
 
@@ -21,10 +21,28 @@ export const getProduct = async (productId: string): Promise<ProductType | null>
   }
 }
 
+export const getProducts = async (productIds: string[] = []): Promise<ProductType[]> => {
+  try {
+    const snapshot = await db.collection('products').get();
+
+    if (snapshot.empty) return [];
+
+    return snapshot.docs.map((doc) => {
+      return {
+        ...doc.data(),
+        id: doc.id,
+      } as ProductType;
+    });
+  } catch (error) {
+    console.error('Error getting products:', error);
+    throw error;
+  }
+};
+
 export const getLatestProducts = async (maxResults: number = 0): Promise<ProductType[]> => {
   try {
     let productsRef = db.collection('products') as Query;
-
+console.log(maxResults);
     if (maxResults > 0) {
       productsRef = productsRef.limit(maxResults);
     }
@@ -53,6 +71,7 @@ export const getCategories = async (): Promise<CategoryType[]> => {
 
     return snapshot.docs.map((doc: QueryDocumentSnapshot) => ({
       ...doc.data(),
+      createdAt: doc.data().createdAt.toMillis(),
       id: doc.id,
     })) as CategoryType[];
   } catch (error) {
@@ -103,6 +122,37 @@ export const getCategoryProducts = async (categoryId: string): Promise<ProductTy
     })) as ProductType[];
   } catch (error) {
     console.error('Error getting products:', error);
+    throw error;
+  }
+}
+
+export const getOrders = async (): Promise<OrderType[]> => {
+  try {
+    const snapshot = await db.collection('orders').get();
+    return snapshot.docs.map((doc) => {
+      const data = doc.data();
+
+      return {
+        ...data,
+        createdAt: data.createdAt.toMillis(),
+        items: data.items.map((item: any) => ({
+          ...item,
+          createdAt: item.createdAt.toMillis(),
+        })),
+      } as OrderType;
+    });
+  } catch (error) {
+    console.error('Error getting orders:', error);
+    throw error;
+  }
+}
+
+export const getCustomers = async (): Promise<UserType[]> => {
+  try {
+    const snapshot = await db.collection('users').where('role', '==', 'customer').get();
+    return snapshot.docs.map((doc) => doc.data()) as UserType[];
+  } catch (error) {
+    console.error('Error getting customers:', error);
     throw error;
   }
 }

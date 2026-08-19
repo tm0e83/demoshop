@@ -1,65 +1,14 @@
 import {onSchedule} from "firebase-functions/v2/scheduler";
 import * as admin from "firebase-admin";
 import initialData from "./data.json";
+import {
+  COLLECTIONS,
+  assignDayOffsets,
+  normalizeDoc,
+} from "./lib/seed-helpers";
+import type {CollectionName, SeedData, SeedDoc} from "./lib/seed-helpers";
 
 admin.initializeApp();
-
-// RTDB seed data also contains `productsByCategory` and `userOrders`, which
-// were denormalized lookup indexes for RTDB. Firestore queries
-// (`array-contains` on `categoryIds`, `where('uid', ...)`) replace them, so
-// they're intentionally not migrated.
-const COLLECTIONS = [
-  "categories", "products", "users", "orders", "discounts",
-] as const;
-type CollectionName = typeof COLLECTIONS[number];
-
-type SeedDoc = Record<string, unknown>;
-type SeedData = Record<CollectionName, Record<string, SeedDoc>>;
-
-const toTimestamp = (value: unknown): unknown => {
-  return typeof value === "number" ?
-    admin.firestore.Timestamp.fromMillis(value) :
-    value;
-};
-
-const normalizeDoc = (
-  collectionName: CollectionName,
-  data: SeedDoc
-): SeedDoc => {
-  const normalized: SeedDoc = {...data};
-
-  if ("createdAt" in normalized) {
-    normalized.createdAt = toTimestamp(normalized.createdAt);
-  }
-
-  const hasCategoryIds = collectionName === "products" &&
-    normalized.categoryIds &&
-    typeof normalized.categoryIds === "object";
-
-  if (hasCategoryIds) {
-    const categoryIds = normalized.categoryIds as Record<string, boolean>;
-    normalized.categoryIds = Object.keys(categoryIds);
-  }
-
-  if (collectionName === "users" && typeof normalized.birthdate === "string") {
-    const birthdate = new Date(normalized.birthdate);
-    normalized.birthdate = admin.firestore.Timestamp.fromDate(birthdate);
-  }
-
-  if (collectionName === "orders" && Array.isArray(normalized.items)) {
-    normalized.items = (normalized.items as SeedDoc[]).map((item) => ({
-      ...item,
-      createdAt: toTimestamp(item.createdAt),
-    }));
-  }
-
-  if (collectionName === "discounts") {
-    normalized.validFrom = toTimestamp(normalized.validFrom);
-    normalized.validUntil = toTimestamp(normalized.validUntil);
-  }
-
-  return normalized;
-};
 
 const clearCollection = async (
   db: admin.firestore.Firestore,
@@ -92,6 +41,28 @@ const seedCollection = async (
   }
 };
 
+import type {
+  AddressType,
+  CartItemType,
+  DiscountType,
+  PaymentMethodType,
+  ShippingMethodType,
+  UserType,
+} from "@/typings";
+
+export type OrderType = {
+  billingAddress: AddressType;
+  createdAt: number;
+  id: string;
+  items: CartItemType[];
+  paymentMethodId: PaymentMethodType["id"];
+  shippingAddress: AddressType;
+  shippingMethodId: ShippingMethodType["id"];
+  status: string;
+  uid: UserType["id"];
+  discounts: DiscountType[];
+};
+
 export const resetDatabase = onSchedule("0 2 * * *", async () => {
   const db = admin.firestore();
   const seedData = initialData as unknown as SeedData;
@@ -99,6 +70,22 @@ export const resetDatabase = onSchedule("0 2 * * *", async () => {
   try {
     for (const collectionName of COLLECTIONS) {
       await clearCollection(db, collectionName);
+
+      if (collectionName === "orders") {
+        const orders = structuredClone(seedData[collectionName]);
+        const currentTimestamp = new Date().getTime();
+        const oneDay = 24 * 60 * 60 * 1000;
+
+        const dayOffsetById = assignDayOffsets(Object.keys(orders));
+
+        dayOffsetById.forEach((dayOffset, id) => {
+          orders[id].createdAt = currentTimestamp - dayOffset * oneDay;
+        });
+
+        await seedCollection(db, collectionName, orders);
+        continue;
+      }
+
       await seedCollection(db, collectionName, seedData[collectionName] ?? {});
     }
     console.log("Firestore successfully reset to default state.");

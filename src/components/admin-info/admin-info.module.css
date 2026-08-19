@@ -1,0 +1,7 @@
+.adminInfo {
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: var(--palette-5);
+  color: #fff;
+  margin-bottom: 1rem;
+}

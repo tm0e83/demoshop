@@ -8,12 +8,11 @@ import ProductList from '@/components/product-list';
 import Title from '@/components/title'
 import Category from '@/components/category';
 import { getLatestProducts, getCategories } from '@/services/firebase-admin.service';
-import AdminInfo from './admin-info';
 
 export default async function Home() {
   cacheLife('hours');
 
-  const products = await getLatestProducts(6);
+  const products = await getLatestProducts(8);
   const categories = await getCategories();
 
   return (
@@ -27,7 +26,6 @@ export default async function Home() {
             No real orders can be placed and no goods will be delivered.</p>
           </div>
           <div className={styles.modelImage}></div>
-          <AdminInfo />
         </div>
       </section>
 

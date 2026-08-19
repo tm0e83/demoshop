@@ -33,6 +33,6 @@ module.exports = [
     },
   }),
   {
-    ignores: ["lib/**/*", "generated/**/*", "eslint.config.js"],
+    ignores: ["lib/**/*", "generated/**/*", "eslint.config.js", "vitest.config.mts"],
   },
 ];

@@ -8,13 +8,12 @@ import { useMemo } from 'react';
 import { Search } from 'lucide-react';
 import Alert from '@/components/alert';
 import BaseInput from '@/components/input';
-import Card from '@/components/card/card';
 import ProductCard from '@/components/product-card';
 import ProductList from '@/components/product-list';
 import RangeSlider from '@/components/range-slider';
 import { ProductType } from '@/typings';
 
-export default function CategoryProductList({ products }: { products: ProductType[] }) {
+export default function CategoryProductList({ products }: { readonly products: ProductType[] }) {
   const [searchTerm, setSearchTerm] = useQueryState('search', { defaultValue: '' });
   const [selectedMinPrice, setSelectedMinPrice] = useQueryState('minprice', parseAsFloat);
   const [selectedMaxPrice, setSelectedMaxPrice] = useQueryState('maxprice', parseAsFloat);
@@ -75,50 +74,49 @@ export default function CategoryProductList({ products }: { products: ProductTyp
   return (
     <>
       {products && products.length > 0 ? (
-        <>
-          <div className={styles.categoryPageContents}>
-            <Card className={styles.productFilters}>
-              <div>
-                <div className="input-wrap">
-                  <BaseInput
-                    placeholder="Search..."
-                    value={searchTerm}
-                    onChange={handleSearch}
-                  />
-                  <Search size={16} />
-                </div>
+        <div className={styles.categoryPageContents}>
+          <div className={styles.productFilters}>
+            <div>
+              <div className="input-wrap">
+                <BaseInput
+                  placeholder="Search..."
+                  value={searchTerm}
+                  onChange={handleSearch}
+                />
+                <Search size={16} />
               </div>
-
-              {lowestPrice !== highestPrice && (
-                <div>
-                  <label htmlFor="" className='d-block text-center'>Price</label>
-                  <RangeSlider
-                    id={`${lowestPrice}-${highestPrice}`}
-                    min={lowestPrice}
-                    max={highestPrice}
-                    step={0.01}
-                    onChange={handlePriceRangeChange}
-                  />
-                </div>
-              )}
-            </Card>
-
-            {filteredProducts.length > 0 ? (
-              <ProductList>
-                {filteredProducts.map((product) => (
-                  <ProductCard
-                    key={product.id}
-                    product={product}
-                  />
-                ))}
-              </ProductList>
-            ) : (
-            <div className="no-results">
-              <Alert type="info" className="flex-1">No products found matching the search and filter criteria.</Alert>
             </div>
+
+            {lowestPrice !== highestPrice && (
+              <div>
+                <label htmlFor={`minRange-${lowestPrice}-${highestPrice}`} className='d-block text-center'>Price</label>
+                <RangeSlider
+                  key={`${lowestPrice}-${highestPrice}`}
+                  id={`${lowestPrice}-${highestPrice}`}
+                  min={lowestPrice}
+                  max={highestPrice}
+                  step={0.01}
+                  onChange={handlePriceRangeChange}
+                />
+              </div>
             )}
           </div>
-        </>
+
+          {filteredProducts.length > 0 ? (
+            <ProductList>
+              {filteredProducts.map((product) => (
+                <ProductCard
+                  key={product.id}
+                  product={product}
+                />
+              ))}
+            </ProductList>
+          ) : (
+          <div className="no-results">
+            <Alert type="info" className="flex-1">No products found matching the search and filter criteria.</Alert>
+          </div>
+          )}
+        </div>
       ) : (
         <div className="no-results">
           <Alert type="info">No products found for this category.</Alert>

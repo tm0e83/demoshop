@@ -15,7 +15,8 @@ import { auth } from '@/config/firebase';
 import Button from '@/components/button';
 import Title from '@/components/title';
 import Input from '@/components/input';
-import Card from '@/components/card/card';
+import PageTitle from '@/components/page-title';
+import AdminInfo from '@/components/admin-info';
 import { useUser } from '@/hooks';
 import { userStore } from '@/store';
 
@@ -52,10 +53,10 @@ export default function Login() {
 
   return (
     <div className={styles.login}>
-      <h1>Login</h1>
-      <div className="d-flex gap-4 flex-wrap">
-        <Card className="flex-1">
-          <form onSubmit={handleSubmit(onSubmitForm)}>
+      <PageTitle>Login</PageTitle>
+        <AdminInfo />
+        <div className="d-flex gap-8 flex-wrap align-items-start">
+          <form className="flex-1" onSubmit={handleSubmit(onSubmitForm)}>
             <Input
               id="email"
               label="Email"
@@ -74,14 +75,13 @@ export default function Login() {
             />
             <Button>Login</Button>
           </form>
-        </Card>
 
-        <Card>
-          <Title level={2}>Don&apos;t have an account?</Title>
-          <Link href="/signup">
-            <Button>Sign Up</Button>
-          </Link>
-        </Card>
+          <div>
+            <Title level={2}>Don&apos;t have an account?</Title>
+            <Link href="/signup">
+              <Button>Sign Up</Button>
+            </Link>
+          </div>
       </div>
     </div>
   );
