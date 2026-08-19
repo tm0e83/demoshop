@@ -7,7 +7,7 @@ type CardProps = {
   href?: string;
 };
 
-export default function Card({ children, className = '', href }: CardProps) {
+export default function Card({ children, className = '', href }: Readonly<CardProps>) {
   if (href) {
     return (
       <Link href={href} className={`${styles.card} ${className}`}>

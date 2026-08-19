@@ -73,7 +73,7 @@ export const resetDatabase = onSchedule("0 2 * * *", async () => {
 
       if (collectionName === "orders") {
         const orders = structuredClone(seedData[collectionName]);
-        const currentTimestamp = new Date().getTime();
+        const currentTimestamp = Date.now();
         const oneDay = 24 * 60 * 60 * 1000;
 
         const dayOffsetById = assignDayOffsets(Object.keys(orders));

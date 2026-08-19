@@ -67,7 +67,7 @@ describe("toTimestamp", () => {
 
   it("leaves non-numeric values untouched", () => {
     expect(toTimestamp("already-a-string")).toBe("already-a-string");
-    expect(toTimestamp(null)).toBe(null);
+    expect(toTimestamp(null)).toBeNull();
   });
 });
 

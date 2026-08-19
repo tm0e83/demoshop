@@ -43,6 +43,9 @@ next-env.d.ts
 # AI
 .claude
 
+# Editor
+.vscode
+
 # private keys
 *privatekey*
 
